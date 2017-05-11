@@ -1,0 +1,46 @@
+<form class="layui-form" enctype="multipart/form-data" method="post">
+  <div class="layui-form-item activity">
+    <div class="layui-input-inline" style="width:450px;margin-top: 10px;">
+      <label class="layui-form-label">联系方式</label>
+      <input type="text" name="contact" lay-verify="required" placeholder="请输入您的联系方式" autocomplete="off"  id="slogan" class="layui-input" style="width:300px;">
+      <label class="layui-form-label">留言内容</label>
+      <textarea type="text" name="content" lay-verify="required" placeholder="请输入留言内容" class="layui-textarea" style="width:300px;margin-top: 10px;">
+      </textarea>
+    </div>
+  </div>
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="user" >立即提交</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+<script>
+layui.use('form', function(){
+	var form = layui.form(),
+   	$ = layui.jquery
+	form.on('submit(user)', function(data){
+		  
+	    var groupInfo = data.field;
+		var url = "{:U('Index/addMessage')}";
+		$.post(url,groupInfo,function(data){
+			if(data.status == "true"){
+					layer.msg('感谢您的留言', {
+						  icon: 6,//成功的表情
+						  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+						}, function(){
+						   location.reload();
+						}); 
+				 
+			  }else{
+				   layer.msg(data.msg,{icon: 5});//失败的表情
+				   return;
+			  }
+		});
+		
+	    return false;//阻止表单跳转
+	  });
+	});
+ 	
+
+</script>

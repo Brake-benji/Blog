@@ -1,0 +1,18 @@
+[ 2017-05-11T22:28:50+08:00 ] ::1 /Blog/Backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001581s ]
+ERR: 无法加载模块:Http:
+
+[ 2017-05-11T22:34:23+08:00 ] ::1 /Blog/Public/Images/login-bg-1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001619s ]
+ERR: 无法加载模块:Http:
+
+[ 2017-05-11T22:35:33+08:00 ] ::1 /Blog/Public/upload/Ad/123456789_15.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001344s ]
+ERR: 无法加载模块:Http:
+

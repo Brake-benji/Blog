@@ -1,0 +1,20 @@
+[ 2017-05-04T23:40:30+08:00 ] ::1 /AuthOne/index.php/Admin/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004084s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0052s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1493912430' WHERE `id` = 15 [ RunTime:0.1129s ]
+
+[ 2017-05-04T23:41:05+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/delTag.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003271s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0157s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0160s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `tag` WHERE ( id =6 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: DELETE FROM `tag` WHERE ( id =6 ) [ RunTime:0.1059s ]
+

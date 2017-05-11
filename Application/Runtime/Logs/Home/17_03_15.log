@@ -1,0 +1,15 @@
+[ 2017-03-15T23:36:57+08:00 ] ::1 /AuthOne/Index/detail/id/3
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-15T23:41:12+08:00 ] ::1 /AuthOne/
+ERR: 1146:Table 'authone.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-03-15T23:43:59+08:00 ] ::1 /AuthOne/
+ERR: 1054:Unknown column 'is_top' in 'where clause'
+ [ SQL语句 ] : SELECT a.id,a.title,a.readcounts,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and is_top = 'y' ) ORDER BY a.readcounts DESC LIMIT 10  
+
+[ 2017-03-15T23:43:59+08:00 ] ::1 /AuthOne/
+ERR: 1054:Unknown column 'is_top' in 'where clause'
+ [ SQL语句 ] : SELECT a.id,a.title,a.readcounts,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and is_top = 'y' ) ORDER BY a.readcounts DESC LIMIT 10  
+

@@ -1,0 +1,17 @@
+[ 2017-03-16T22:48:31+08:00 ] ::1 /AuthOne/
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`title`,`pid` FROM `admin_auth_rule` WHERE ( pid = ) 
+
+[ 2017-03-16T22:50:29+08:00 ] ::1 /AuthOne/
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT `id`,`title`,`pid` FROM `admin_auth_rule` WHERE ( pid = ) 
+
+[ 2017-03-16T23:44:08+08:00 ] ::1 /AuthOne/
+ERR: XML标签语法错误 : name="<?php echo ($ko["son"]); ?
+
+[ 2017-03-16T23:46:04+08:00 ] ::1 /AuthOne/
+ERR: XML标签语法错误 : name="<?php echo ($ko["son"]); ?
+
+[ 2017-03-16T23:49:28+08:00 ] ::1 /AuthOne/
+ERR: XML标签语法错误 : name="<?php echo ($vo['son']); ?
+

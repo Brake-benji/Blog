@@ -1,0 +1,22 @@
+[ 2017-03-15T22:58:15+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003436s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1489589895' WHERE `id` = 15 [ RunTime:0.0745s ]
+
+[ 2017-03-15T22:58:26+08:00 ] ::1 /AuthOne/index.php/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001934s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0108s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0113s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0114s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+

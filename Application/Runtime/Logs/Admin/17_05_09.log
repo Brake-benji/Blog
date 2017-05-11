@@ -1,0 +1,764 @@
+[ 2017-05-09T10:32:11+08:00 ] ::1 /AuthOne/index.php/Admin/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003127s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1494297131' WHERE `id` = 15 [ RunTime:0.0707s ]
+
+[ 2017-05-09T10:39:27+08:00 ] ::1 /AuthOne/index.php/Admin/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002630s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0031s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1494297567' WHERE `id` = 15 [ RunTime:0.0802s ]
+
+[ 2017-05-09T10:51:53+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/delArticle.html?id=30
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004353s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0182s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0168s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `article` WHERE ( id =30 and is_valid = 'y' ) LIMIT 1   [ RunTime:0.0037s ]
+SQL: UPDATE `article` SET `is_valid`='n' WHERE ( id =30 ) [ RunTime:0.0917s ]
+
+[ 2017-05-09T10:51:59+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/changeStatus.html?id=30
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002557s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0180s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0196s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `article` WHERE ( id =30 and is_valid = 'n' ) LIMIT 1   [ RunTime:0.0054s ]
+SQL: UPDATE `article` SET `is_valid`='y' WHERE ( id =30 ) [ RunTime:0.0617s ]
+
+[ 2017-05-09T10:52:03+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003584s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0456s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0324s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0313s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-09T11:06:34+08:00 ] ::1 /AuthOne/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002824s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0266s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001778s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003497s ]
+
+[ 2017-05-09T11:06:35+08:00 ] ::1 /AuthOne/index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000408s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001704s ]
+
+[ 2017-05-09T11:08:49+08:00 ] ::1 /AuthOne/index.php/Admin/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0240s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0263s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `status` = 1 AND `is_menu` = 1  [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000697s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 40 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003321s ]
+
+[ 2017-05-09T11:08:52+08:00 ] ::1 /AuthOne/index.php/Admin/AuthGroup/authGroupList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002710s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0225s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0193s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_auth_group` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `admin_auth_group` WHERE `status` = 1 ORDER BY is_manage DESC,id DESC LIMIT 0,15   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000466s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001629s ]
+
+[ 2017-05-09T11:08:53+08:00 ] ::1 /AuthOne/index.php/Admin/AuthGroup/addGroup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001690s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0214s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0239s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001892s ]
+
+[ 2017-05-09T11:08:57+08:00 ] ::1 /AuthOne/index.php/Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003883s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0185s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0219s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0187s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_user` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `admin_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003687s ]
+
+[ 2017-05-09T12:59:15+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009064s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0204s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0202s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0019s ]
+SQL: select ss.*,cc.* from (select a.*,b.nick_name as nickname,c.title as catename from article a left join admin_user b on a.uid = b.id left join admin_auth_rule c on a.cid = c.id) as ss left join (select d.aid,d.tid,e.tagname from article_tag_relate d left join tag e on d.tid = e.id) as cc on ss.id = cc.aid group by id order by createtime desc,readcounts desc limit 0,10 [ RunTime:0.0291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000832s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003684s ]
+
+[ 2017-05-09T13:00:44+08:00 ] ::1 /AuthOne/index.php/Admin/Other/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001982s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0321s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0341s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0346s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `activity` LIMIT 1   [ RunTime:0.0254s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0299s ]
+SQL: SELECT a.*,b.user_name as nickname FROM activity a LEFT JOIN admin_user b ON a.uid = b.id  ORDER BY priority,createtime desc LIMIT 0,5   [ RunTime:0.0211s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002603s ]
+
+[ 2017-05-09T13:00:56+08:00 ] ::1 /AuthOne/index.php/Admin/Other/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002266s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0286s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0314s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0195s ]
+SQL: SELECT COUNT(*) AS tp_count FROM links a LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT a.*,b.user_name as nickname FROM links a LEFT JOIN admin_user b ON a.uid = b.id  WHERE ( is_valid = 'y' ) ORDER BY createtime DESC  [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001582s ]
+
+[ 2017-05-09T14:13:35+08:00 ] ::1 /AuthOne/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002904s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0191s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.016429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017412s ]
+
+[ 2017-05-09T14:13:35+08:00 ] ::1 /AuthOne/index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2017-05-09T14:13:49+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/tag.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002860s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0261s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0272s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0025s ]
+SQL: select a.id,a.tagname,a.createtime,count(b.tid) as count,c.nick_name as nickname from tag a left join article_tag_relate b on a.id = b.tid left join admin_user c on a.uid = c.id  group by id order by createtime desc [ RunTime:0.0066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\c3d04870c73ec445ee0eb6ab8c720484.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002689s ]
+
+[ 2017-05-09T14:13:59+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002162s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0327s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0355s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0419s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0250s ]
+SQL: select ss.*,cc.* from (select a.*,b.nick_name as nickname,c.title as catename from article a left join admin_user b on a.uid = b.id left join admin_auth_rule c on a.cid = c.id) as ss left join (select d.aid,d.tid,e.tagname from article_tag_relate d left join tag e on d.tid = e.id) as cc on ss.id = cc.aid group by id order by createtime desc,readcounts desc limit 0,10 [ RunTime:0.0482s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000601s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002754s ]
+
+[ 2017-05-09T14:14:39+08:00 ] ::1 /AuthOne/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0195s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004748s ]
+
+[ 2017-05-09T14:14:40+08:00 ] ::1 /AuthOne/index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005927s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000340s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000778s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003760s ]
+
+[ 2017-05-09T15:27:59+08:00 ] ::1 /AuthOne/index.php/Admin/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007458s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0183s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0225s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0467s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `status` = 1 AND `is_menu` = 1  [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 40 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003814s ]
+
+[ 2017-05-09T15:54:40+08:00 ] ::1 /AuthOne/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.051848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.051036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.051199s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.1180s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0768s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.3101s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.255541s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.255714s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.845582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.845748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.141763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.141897s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.079873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.080113s ]
+
+[ 2017-05-09T15:54:40+08:00 ] ::1 /AuthOne/index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001412s ]
+
+[ 2017-05-09T15:55:08+08:00 ] ::1 /AuthOne/index.php/Admin/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001730s ]
+
+[ 2017-05-09T15:55:08+08:00 ] ::1 /AuthOne/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002526s ]
+
+[ 2017-05-09T15:55:09+08:00 ] ::1 /AuthOne/index.php/Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002177s ]
+
+[ 2017-05-09T15:55:20+08:00 ] ::1 /AuthOne/index.php/Admin/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'test' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1494316520' WHERE `id` = 16 [ RunTime:0.0649s ]
+
+[ 2017-05-09T15:55:20+08:00 ] ::1 /AuthOne/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0130s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '16'  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('14','23','32','33','37') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2017-05-09T15:55:21+08:00 ] ::1 /AuthOne/index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2017-05-09T15:55:31+08:00 ] ::1 /AuthOne/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001701s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0125s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '16'  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('14','23','32','33','37') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2017-05-09T15:55:31+08:00 ] ::1 /AuthOne/index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001813s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001230s ]
+
+[ 2017-05-09T15:55:36+08:00 ] ::1 /AuthOne/index.php/Admin/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+
+[ 2017-05-09T15:55:36+08:00 ] ::1 /AuthOne/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002304s ]
+
+[ 2017-05-09T15:55:36+08:00 ] ::1 /AuthOne/index.php/Admin/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001896s ]
+
+[ 2017-05-09T16:03:37+08:00 ] ::1 /AuthOne/index.php/Admin/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001661s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1494317017' WHERE `id` = 15 [ RunTime:0.1012s ]
+
+[ 2017-05-09T16:03:37+08:00 ] ::1 /AuthOne/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0112s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001390s ]
+
+[ 2017-05-09T16:03:38+08:00 ] ::1 /AuthOne/index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002571s ]
+
+[ 2017-05-09T16:03:41+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002128s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0108s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0105s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0011s ]
+SQL: select ss.*,cc.* from (select a.*,b.nick_name as nickname,c.title as catename from article a left join admin_user b on a.uid = b.id left join admin_auth_rule c on a.cid = c.id) as ss left join (select d.aid,d.tid,e.tagname from article_tag_relate d left join tag e on d.tid = e.id) as cc on ss.id = cc.aid group by id order by createtime desc,readcounts desc limit 0,10 [ RunTime:0.0118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001207s ]
+

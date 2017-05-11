@@ -1,0 +1,174 @@
+[ 2017-03-07T22:42:32+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:32+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:33+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:33+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:34+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:34+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:34+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:34+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:34+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:35+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:35+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:35+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:35+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T22:42:58+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002468s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0392s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1488897778' WHERE `id` = 15 [ RunTime:0.0572s ]
+
+[ 2017-03-07T22:43:20+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002921s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'test' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2017-03-07T22:43:27+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002226s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.4248s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'test' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0025s ]
+
+[ 2017-03-07T22:44:21+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001929s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'test' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1488897861' WHERE `id` = 16 [ RunTime:0.1346s ]
+
+[ 2017-03-07T22:44:30+08:00 ] ::1 /AuthOne/index.php/User/editUser.html?user_id=15
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001901s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0137s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='16' and g.status='1' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0126s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','23','32','33','37') AND `type` = 1 AND `status` = 1  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `admin_user` WHERE `id` = 15 AND `status` = 1 LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2017-03-07T22:44:36+08:00 ] ::1 /AuthOne/index.php/User/editUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002723s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0132s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='16' and g.status='1' )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0144s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','23','32','33','37') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0213s ]
+SQL: UPDATE `admin_user` SET `user_name`='admin',`password`='e10adc3949ba59abbe56e057f20f883e' WHERE `id` = 15 [ RunTime:0.1859s ]
+
+[ 2017-03-07T22:44:47+08:00 ] ::1 /AuthOne/index.php/User/deleteUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0133s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='16' and g.status='1' )  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0113s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','23','32','33','37') AND `type` = 1 AND `status` = 1  [ RunTime:0.0024s ]
+
+[ 2017-03-07T22:48:32+08:00 ] ::1 /AuthOne/index.php/User/deleteUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002348s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0114s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='16' and g.status='1' )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0105s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('14','23','32','33','37') AND `type` = 1 AND `status` = 1  [ RunTime:0.0018s ]
+
+[ 2017-03-07T23:34:59+08:00 ] ::1 /AuthOne/Login/login.html
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:03+08:00 ] ::1 /AuthOne/Login/login.html
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:03+08:00 ] ::1 /AuthOne/Login/login.html
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:03+08:00 ] ::1 /AuthOne/Login/login.html
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:04+08:00 ] ::1 /AuthOne/Login/login.html
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:04+08:00 ] ::1 /AuthOne/Login/login.html
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:36+08:00 ] ::1 /AuthOne/Login/login.html
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:45+08:00 ] ::1 /AuthOne/Login/verify.html
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:54+08:00 ] ::1 /AuthOne/Login/verify.html
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:56+08:00 ] ::1 /AuthOne/Login/verify.html?0.07851868565680964
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:56+08:00 ] ::1 /AuthOne/Login/verify.html?0.07851868565680964?0.4215997595130414
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:57+08:00 ] ::1 /AuthOne/Login/verify.html?0.07851868565680964?0.4215997595130414?0.8092758950036284
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:35:57+08:00 ] ::1 /AuthOne/Login/verify.html?0.07851868565680964?0.4215997595130414?0.8092758950036284?0.03773221398463489
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:36:19+08:00 ] ::1 /AuthOne/Login/login.html
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-07T23:36:52+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003577s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0341s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1488901012' WHERE `id` = 15 [ RunTime:0.0421s ]
+
+[ 2017-03-07T23:36:57+08:00 ] ::1 /AuthOne/index.php/Category/internet.html
+ERR: 非法操作:internet
+

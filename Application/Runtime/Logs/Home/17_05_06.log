@@ -1,0 +1,75 @@
+[ 2017-05-06T13:22:54+08:00 ] ::1 /AuthOne/
+ERR: 1054:Unknown column 'nums' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`nums`,`tagname` FROM `tag` ORDER BY nums DESC 
+
+[ 2017-05-06T15:46:15+08:00 ] ::1 /AuthOne/index.php/Home/Index/index.html
+ERR: 1054:Unknown column 'nums' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`nums`,`tagname` FROM `tag` ORDER BY nums DESC 
+
+[ 2017-05-06T17:03:10+08:00 ] ::1 /AuthOne/index.php/Home/Index/index.html
+ERR: 1054:Unknown column 'nums' in 'field list'
+ [ SQL语句 ] : SELECT `id`,`nums`,`tagname` FROM `tag` ORDER BY nums DESC 
+
+[ 2017-05-06T17:04:17+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005151s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0211s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0071s ]
+
+[ 2017-05-06T17:06:28+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015667s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0272s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0036s ]
+
+[ 2017-05-06T17:06:47+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020352s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1155s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0267s ]
+
+[ 2017-05-06T17:07:18+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034161s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0259s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0054s ]
+
+[ 2017-05-06T17:07:37+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010091s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0460s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0127s ]
+
+[ 2017-05-06T17:07:45+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006180s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0259s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0024s ]
+
+[ 2017-05-06T23:01:00+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005447s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0172s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0022s ]
+
+[ 2017-05-06T23:05:57+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006062s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0167s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0030s ]
+
+[ 2017-05-06T23:16:03+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004833s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0214s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0025s ]
+

@@ -1,0 +1,21 @@
+[ 2017-03-27T20:44:41+08:00 ] ::1 /AuthOne/
+ERR: 1054:Unknown column 'is_top' in 'where clause'
+ [ SQL语句 ] : SELECT a.id,a.title,a.readcounts,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and is_top = 'y' ) ORDER BY a.readcounts DESC LIMIT 10  
+
+[ 2017-03-27T20:44:42+08:00 ] ::1 /AuthOne/
+ERR: 1054:Unknown column 'is_top' in 'where clause'
+ [ SQL语句 ] : SELECT a.id,a.title,a.readcounts,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and is_top = 'y' ) ORDER BY a.readcounts DESC LIMIT 10  
+
+[ 2017-03-27T21:04:12+08:00 ] ::1 /AuthOne/index.php/Index/tagcate/tagid/2
+ERR: 非法操作:tagcate
+
+[ 2017-03-27T21:07:57+08:00 ] ::1 /AuthOne/index.php/Index/detail/id/index.php/Index/tagcate/tagid/2
+ERR: 1054:Unknown column 'index.php' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and a.id =index.php ) LIMIT 1  
+
+[ 2017-03-27T21:08:52+08:00 ] ::1 /AuthOne/index.php/Login/login.html
+ERR: 无法加载控制器:Login
+
+[ 2017-03-27T21:13:06+08:00 ] ::1 /AuthOne/index.php/Index/tagcate/tagid/2.html
+ERR: 非法操作:tagcate
+

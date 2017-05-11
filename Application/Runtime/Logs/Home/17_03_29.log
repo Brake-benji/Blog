@@ -1,0 +1,70 @@
+[ 2017-03-29T22:58:10+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=cnblue
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001710s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0126s ]
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%cnblue%' OR a.title LIKE '%cnblue') LIMIT 1  
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%cnblue%' OR a.title LIKE '%cnblue') LIMIT 1  
+
+[ 2017-03-29T23:02:20+08:00 ] ::1 /AuthOne/index.php/Home/Index/category/cid/Arrayid.html
+ERR: 1054:Unknown column 'Arrayid' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`pid`,`title` FROM `admin_auth_rule` WHERE ( id = Arrayid OR pid =Arrayid ) 
+
+[ 2017-03-29T23:02:44+08:00 ] ::1 /AuthOne/index.php/Home/Index/category/cid/Arrayid.html
+ERR: 1054:Unknown column 'Arrayid' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`pid`,`title` FROM `admin_auth_rule` WHERE ( id = Arrayid OR pid =Arrayid ) 
+
+[ 2017-03-29T23:56:31+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=12346
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002662s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0147s ]
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%12346%' OR a.title LIKE '%12346') LIMIT 1  
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%12346%' OR a.title LIKE '%12346') LIMIT 1  
+
+[ 2017-03-29T23:57:08+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=fsdafsdf
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002099s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0144s ]
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%fsdafsdf%' OR a.title LIKE '%fsdafsdf') LIMIT 1  
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%fsdafsdf%' OR a.title LIKE '%fsdafsdf') LIMIT 1  
+
+[ 2017-03-29T23:58:34+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=123156
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003024s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0140s ]
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%123156%' OR a.title LIKE '%123156') LIMIT 1  
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%123156%' OR a.title LIKE '%123156') LIMIT 1  
+
+[ 2017-03-29T23:59:05+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=12345
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003238s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0186s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (`title` LIKE '%12345%' OR `title` LIKE '%12345') LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0130s ]
+ERR: 1052:Column 'title' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (`title` LIKE '%12345%' OR `title` LIKE '%12345') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10  
+ERR: 1052:Column 'title' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (`title` LIKE '%12345%' OR `title` LIKE '%12345') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10  
+
+[ 2017-03-29T23:59:54+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=12345
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003528s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0181s ]
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%12345%' OR a.title LIKE '%12345') LIMIT 1  
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%12345%' OR a.title LIKE '%12345') LIMIT 1  
+

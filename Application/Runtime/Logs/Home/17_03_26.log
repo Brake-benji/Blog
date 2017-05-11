@@ -1,0 +1,10 @@
+[ 2017-03-26T21:46:59+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=PHP
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015307s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0462s ]
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%PHP%' OR a.title LIKE '%PHP') LIMIT 1  
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%PHP%' OR a.title LIKE '%PHP') LIMIT 1  
+

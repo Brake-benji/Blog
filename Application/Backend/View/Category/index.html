@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>活动管理</title>
+		<link rel="stylesheet" href="__PUBLIC__/plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="__PUBLIC__/css/global.css" media="all">
+		<link rel="stylesheet" href="__PUBLIC__/css/other.css" media="all">
+		<link rel="stylesheet" href="__PUBLIC__/plugins/font-awesome/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div class="admin-main">
+		
+			<blockquote class="layui-elem-quote">
+				<button  class="layui-btn layui-btn-small add">
+					<i class="layui-icon">&#xe608;</i> 添加广告
+				</button>
+			</blockquote>
+			<fieldset class="layui-elem-field">
+				<legend>广告列表</legend>
+				<div class="layui-field-box">
+				<table class="layui-table">
+					  <thead>
+					    <tr>
+					      <th>发布人</th>
+					      <th>缩略图</th>
+					      <th>活动标语</th>
+					      <th>描述</th>
+					      <th>权重</th>
+					      <th>状态</th>
+					      <th>创建时间</th>
+					      <th>操作</th>
+					    </tr> 
+					  </thead>
+					  <tbody>
+					  <foreach name="list" item="v">
+					    <tr>
+					      <td>{$v.nickname}</td>
+					      <td><img src="__ROOT__{$v.filepath}" style="width:300px;"></td>
+					      <td>{$v.slogan}</td>
+					      <td>{$v.comment}</td>
+					      <td>{$v.priority}</td>
+					   	  <td>
+						   	<if condition="$v.is_valid eq 'y'">
+						   		已发布
+						   	<else />
+						   	<p style="color:#f96863;">审核中</p>
+						   	</if>
+					   	  </td>
+					      <td>{$v.createtime|date="Y-m-d H:i",###}</td>
+					      <td>
+					        <if condition="$v.is_valid eq 'n'">
+					      		<button class="layui-btn layui-btn-mini layui-btn-warm release" data="{$v.id}">
+					      		<i class="layui-icon">&#xe608;</i>发布</button>
+					      	</if>
+							<a data="{$v.id}" class="layui-btn layui-btn-mini layui-btn-normal edit"><i class="layui-icon">&#xe642;</i>编辑</a>
+							<if condition="$v.is_valid eq 'y'">
+								<a  data="{$v.id}" class="layui-btn layui-btn-danger layui-btn-mini del"><i class="layui-icon">&#xe640;</i>删除</a>
+							</if>
+					      </td>
+					    </tr>
+					    </foreach>
+					  </tbody>
+				</table>
+				{$page}
+				</div>
+			</fieldset>
+			
+			
+
+		</div>
+		<script type="text/javascript" src="__PUBLIC__/plugins/layui/layui.js"></script>
+		<script>
+			layui.use(['laypage','layer','form'], function() {
+				var laypage = layui.laypage,
+					$ = layui.jquery
+					//请求表单
+				 $('.add').click(function(){
+					var url = "{:U('Other/releaseAd')}";
+					$.get(url,function(data){
+						if(data.status == 'error'){
+							layer.msg(data.msg,{icon: 5});
+							return;
+						}
+						
+						layer.open({
+							  title:'添加活动',
+							  type: 1,
+							  skin: 'layui-layer-rim', //加上边框
+							  area: ['500px','400px'], //宽高
+							  content: data,
+						});
+					})
+				 });
+
+				//发布活动
+				$('.release').click(function(){
+					var id = $(this).attr('data');
+					var url = "{:U('Other/changeStatus')}";
+					layer.confirm('确定发布此活动吗?', {
+						  icon: 3,
+						  skin: 'layer-ext-moon',
+						  btn: ['确认','取消'] //按钮
+						}, function(){
+							$.get(url,{id:id},function(data){
+								if(data.status=='error'){
+									  layer.msg(data.msg,{icon: 5});//失败的表情
+									  return;
+								  }else{
+									  layer.msg('发布成功', {
+										  icon: 6,//成功的表情
+										  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+										}, function(){
+										   window.location.reload();
+										}); 
+								  }	
+							})
+					  });
+				})
+
+				//编辑
+				$('.edit').click(function(){
+					var id = $(this).attr('data');
+					var url = "{:U('Other/editAd')}";
+					
+					$.get(url,{id:id},function(data){
+						if(data.status == 'error'){
+							layer.msg(data.msg,{icon: 5});
+							return;
+						}
+						
+						layer.open({
+							  title:'编辑角色',
+							  type: 1,
+							  skin: 'layui-layer-rim', //加上边框
+							  area: ['500px'], //宽高
+							  content: data,
+						});
+					})
+				 });
+				
+				
+				//删除
+				$('.del').click(function(){
+					var id = $(this).attr('data');
+					var url = "{:U('Other/delAd')}";
+					layer.confirm('确定删除吗?', {
+						  icon: 3,
+						  skin: 'layer-ext-moon',
+						  btn: ['确认','取消'] //按钮
+						}, function(){
+							$.get(url,{id:id},function(data){
+								if(data.status=='error'){
+									  layer.msg(data.msg,{icon: 5});//失败的表情
+									  return;
+								  }else{
+									  layer.msg('删除成功', {
+										  icon: 6,//成功的表情
+										  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+										}, function(){
+										   window.location.reload();
+										}); 
+								  }	
+							})
+					  });
+				})
+				
+			});
+		</script>
+	</body>
+
+</html>

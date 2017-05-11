@@ -1,0 +1,249 @@
+[ 2017-04-30T16:06:57+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004875s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0505s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0046s ]
+
+[ 2017-04-30T16:07:00+08:00 ] ::1 /AuthOne/index.php/Home/Index/category/cid/Arrayid.html
+ERR: 1054:Unknown column 'Arrayid' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`pid`,`title` FROM `admin_auth_rule` WHERE ( id = Arrayid OR pid =Arrayid ) 
+
+[ 2017-04-30T16:07:39+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003193s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0184s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0036s ]
+
+[ 2017-04-30T16:09:55+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009520s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0184s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0018s ]
+
+[ 2017-04-30T16:12:26+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003705s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0352s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0026s ]
+
+[ 2017-04-30T16:12:41+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010478s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0199s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0025s ]
+
+[ 2017-04-30T16:12:50+08:00 ] ::1 /AuthOne/index.php/Home/Index/category/cid/Arrayid.html
+ERR: 1054:Unknown column 'Arrayid' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`pid`,`title` FROM `admin_auth_rule` WHERE ( id = Arrayid OR pid =Arrayid ) 
+
+[ 2017-04-30T16:12:53+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006137s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0291s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0049s ]
+
+[ 2017-04-30T16:12:57+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004104s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0856s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0075s ]
+
+[ 2017-04-30T16:13:39+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006325s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0241s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0018s ]
+
+[ 2017-04-30T16:13:43+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004321s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1797s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0041s ]
+
+[ 2017-04-30T16:16:32+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012307s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0923s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0116s ]
+
+[ 2017-04-30T16:20:33+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005182s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0208s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0025s ]
+
+[ 2017-04-30T16:20:37+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OR pid = )' at line 1
+ [ SQL语句 ] : SELECT `id`,`pid`,`title` FROM `admin_auth_rule` WHERE ( id =  OR pid = ) 
+
+[ 2017-04-30T16:20:44+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/8
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OR pid = )' at line 1
+ [ SQL语句 ] : SELECT `id`,`pid`,`title` FROM `admin_auth_rule` WHERE ( id =  OR pid = ) 
+
+[ 2017-04-30T16:20:54+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/8
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'OR pid = )' at line 1
+ [ SQL语句 ] : SELECT `id`,`pid`,`title` FROM `admin_auth_rule` WHERE ( id =  OR pid = ) 
+
+[ 2017-04-30T22:37:21+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE `id` IN ('') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10  
+
+[ 2017-04-30T22:38:02+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE `id` IN () LIMIT 1  
+
+[ 2017-04-30T22:40:36+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10' at line 1
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE `id` IN () ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10  
+
+[ 2017-04-30T22:41:00+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE `id` IN ('') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10  
+
+[ 2017-04-30T22:41:20+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE `id` IN ('') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10  
+
+[ 2017-04-30T22:41:40+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE `id` IN ('') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10  
+
+[ 2017-04-30T22:42:59+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE `id` IN ('14','15') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10  
+
+[ 2017-04-30T22:44:51+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003714s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0195s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0030s ]
+
+[ 2017-04-30T22:44:55+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2.html
+ERR: 模板不存在:./Application/Home/View/Index/tagcate.html
+
+[ 2017-04-30T22:52:40+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003764s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0704s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0120s ]
+
+[ 2017-04-30T22:54:59+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016241s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0830s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0038s ]
+
+[ 2017-04-30T22:56:49+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004434s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0025s ]
+
+[ 2017-04-30T22:57:13+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007807s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1389s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0024s ]
+
+[ 2017-04-30T22:59:15+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007590s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1168s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0134s ]
+
+[ 2017-04-30T22:59:57+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=135
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003799s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%135%' OR a.title LIKE '%135') LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%135%' OR a.title LIKE '%135') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0044s ]
+NOTIC: [8] Use of undefined constant error - assumed 'error' D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 81 行.
+
+[ 2017-04-30T23:00:32+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006438s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0496s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0080s ]
+
+[ 2017-04-30T23:01:11+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005396s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0474s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0054s ]
+
+[ 2017-04-30T23:01:22+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008704s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1268s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0141s ]
+
+[ 2017-04-30T23:04:07+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011352s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0521s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0055s ]
+
+[ 2017-04-30T23:05:31+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003620s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0255s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0039s ]
+
+[ 2017-04-30T23:06:30+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019860s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0779s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0066s ]
+
+[ 2017-04-30T23:06:57+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027254s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1402s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0278s ]
+
+[ 2017-04-30T23:07:37+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012402s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0832s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0191s ]
+
+[ 2017-04-30T23:08:50+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004226s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0939s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0251s ]
+
+[ 2017-04-30T23:16:49+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005063s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0205s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0026s ]
+

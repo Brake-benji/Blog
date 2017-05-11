@@ -1,0 +1,8 @@
+[ 2017-03-18T22:53:29+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002360s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0749s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1489848809' WHERE `id` = 15 [ RunTime:0.1601s ]
+

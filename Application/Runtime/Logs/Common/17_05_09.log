@@ -1,0 +1,18 @@
+[ 2017-05-09T10:31:28+08:00 ] ::1 /AuthOne/Public/Images/login-bg-1.jpg
+ERR: 无法加载模块:Http:
+
+[ 2017-05-09T10:39:15+08:00 ] ::1 /AuthOne/Public/Images/login-bg-1.jpg
+ERR: 无法加载模块:Http:
+
+[ 2017-05-09T13:00:44+08:00 ] ::1 /AuthOne/Public/upload/Ad/123456789_15.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001553s ]
+ERR: 无法加载模块:Http:
+
+[ 2017-05-09T15:55:09+08:00 ] ::1 /AuthOne/Public/Images/login-bg-1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+ERR: 无法加载模块:Http:
+

@@ -1,0 +1,25 @@
+[ 2017-03-30T00:02:02+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=12345
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003131s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0134s ]
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%12345%' OR a.title LIKE '%12345') LIMIT 1  
+ERR: 1054:Unknown column 'a.title' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `article` WHERE (a.title LIKE '%12345%' OR a.title LIKE '%12345') LIMIT 1  
+
+[ 2017-03-30T00:02:23+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=12345
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003797s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (`title` LIKE '%12345%' OR `title` LIKE '%12345') LIMIT 1   [ RunTime:0.0072s ]
+
+[ 2017-03-30T00:02:47+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=12345
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002551s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE (`title` LIKE '%12345%' OR `title` LIKE '%12345') LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0139s ]
+

@@ -1,0 +1,50 @@
+[ 2017-03-06T22:09:54+08:00 ] ::1 /AuthOne/
+ERR: 1146:Table 'authone.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-03-06T22:10:45+08:00 ] ::1 /AuthOne/
+ERR: 1146:Table 'authone.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-03-06T22:10:47+08:00 ] ::1 /AuthOne/
+ERR: 1146:Table 'authone.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-03-06T22:12:29+08:00 ] ::1 /AuthOne/index.php/Admin
+ERR: 无法加载控制器:Admin
+
+[ 2017-03-06T22:14:57+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-06T22:19:49+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-06T22:19:52+08:00 ] ::1 /AuthOne/
+ERR: 1146:Table 'authone.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-03-06T22:26:32+08:00 ] ::1 /AuthOne/
+ERR: 1146:Table 'authone.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-03-06T22:41:29+08:00 ] ::1 /AuthOne/
+ERR: 1146:Table 'authone.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-03-06T22:41:30+08:00 ] ::1 /AuthOne/
+ERR: 1146:Table 'authone.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-03-06T22:42:08+08:00 ] ::1 /AuthOne/index.php/Login/login.html
+ERR: 无法加载控制器:Login
+
+[ 2017-03-06T22:46:04+08:00 ] ::1 /AuthOne/index.php/Login/login.html
+ERR: 无法加载控制器:Login
+
+[ 2017-03-06T22:47:08+08:00 ] ::1 /AuthOne/
+ERR: 1146:Table 'authone.admin_menu' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `admin_menu`
+
+[ 2017-03-06T23:25:41+08:00 ] ::1 /AuthOne/index.php/Login/login.html
+ERR: 无法加载控制器:Login
+

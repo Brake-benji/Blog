@@ -1,0 +1,193 @@
+[ 2017-03-27T23:06:34+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002957s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0027s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1490627194' WHERE `id` = 15 [ RunTime:0.1229s ]
+
+[ 2017-03-27T23:14:18+08:00 ] ::1 /AuthOne/index.php/AuthGroup/ruleGroup.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004123s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0160s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0148s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group` [ RunTime:0.0193s ]
+
+[ 2017-03-27T23:15:32+08:00 ] ::1 /AuthOne/index.php/AuthGroup/ruleGroup.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003674s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0120s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0135s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group` [ RunTime:0.0132s ]
+
+[ 2017-03-27T23:21:38+08:00 ] ::1 /AuthOne/index.php/AuthGroup/ruleGroup.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004089s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0345s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0122s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group` [ RunTime:0.0177s ]
+
+[ 2017-03-27T23:25:40+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003334s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0172s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0131s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0028s ]
+
+[ 2017-03-27T23:41:58+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005148s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0377s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0245s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0396s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`tagid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试文章','y','on','&lt;p&gt;发电方式打发斯蒂芬干啥事的&lt;/p&gt;','15','1231545','52','2,3,4','/Public/upload/Article/20170327/thumb1490629297_15.jpg','n','1490629317','0') [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: 2,3,4 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0321s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\xampp\htdocs\AuthOne\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `tag` SET `nums`=nums+1 WHERE `id` IN ()
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `tag` SET `nums`=nums+1 WHERE `id` IN ()
+
+[ 2017-03-27T23:42:38+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003646s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0140s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0120s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0161s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`tagid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试文章','y','on','&lt;p&gt;发电方式打发斯蒂芬干啥事的&lt;/p&gt;','15','1231545','52','2,3,4','/Public/upload/Article/20170327/thumb1490629297_15.jpg','n','1490629358','0') [ RunTime:0.0158s ]
+NOTIC: [8] Undefined variable: 2,3,4 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0127s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\xampp\htdocs\AuthOne\ThinkPHP\Library\Think\Db\Driver.class.php 第 578 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `tag` SET `nums`=nums+1 WHERE `id` IN ()
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `tag` SET `nums`=nums+1 WHERE `id` IN ()
+
+[ 2017-03-27T23:44:06+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004998s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0139s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0200s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0216s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`tagid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试文章','y','on','&lt;p&gt;发电方式打发斯蒂芬干啥事的&lt;/p&gt;','15','1231545','52','2,3,4','/Public/upload/Article/20170327/thumb1490629297_15.jpg','n','1490629446','0') [ RunTime:0.0281s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0241s ]
+SQL: UPDATE `tag` SET `nums`=nums+1 WHERE `id` IN ('2','3','4') [ RunTime:0.0716s ]
+
+[ 2017-03-27T23:44:55+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004495s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0171s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0126s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0158s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`tagid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试文章','y','on','&lt;p&gt;发电方式打发斯蒂芬干啥事的&lt;/p&gt;','15','1231545','52','2,3,4','/Public/upload/Article/20170327/thumb1490629297_15.jpg','n','1490629495','0') [ RunTime:0.0239s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0186s ]
+SQL: UPDATE `tag` SET `nums`=nums+1 WHERE `id` IN ('2','3','4') [ RunTime:0.0209s ]
+
+[ 2017-03-27T23:46:55+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003462s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0131s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0156s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0167s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`tagid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试文章','y','on','&lt;p&gt;发电方式打发斯蒂芬干啥事的&lt;/p&gt;','15','1231545','52','2,3,4','/Public/upload/Article/20170327/thumb1490629297_15.jpg','n','1490629615','0') [ RunTime:0.0253s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0138s ]
+SQL: UPDATE `tag` SET `nums`=nums+1 WHERE `id` IN ('2','3','4') [ RunTime:0.0148s ]
+
+[ 2017-03-27T23:47:53+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003385s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0114s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0141s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0122s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`tagid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试文章','y','on','&lt;p&gt;发电方式打发斯蒂芬干啥事的&lt;/p&gt;','15','1231545','52','2,3,4','/Public/upload/Article/20170327/thumb1490629297_15.jpg','n','1490629673','0') [ RunTime:0.0396s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0138s ]
+SQL: UPDATE `tag` SET `nums`=nums+1 WHERE `id` IN ('2','3','4') [ RunTime:0.0029s ]
+
+[ 2017-03-27T23:48:10+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003431s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0156s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0175s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0311s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`tagid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试文章','y','on','&lt;p&gt;发电方式打发斯蒂芬干啥事的&lt;/p&gt;','15','1231545','52','2,3,4','/Public/upload/Article/20170327/thumb1490629297_15.jpg','n','1490629690','0') [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0192s ]
+
+[ 2017-03-27T23:49:10+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004899s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0142s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0115s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0014s ]
+
+[ 2017-03-27T23:51:07+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005182s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0235s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0129s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0151s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`content`,`uid`,`described`,`cid`,`tagid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('lalallal','y','&lt;p&gt;dasfafadfsdfasds&lt;/p&gt;','15','12315465465','48','2,4','/Public/upload/Article/20170327/thumb1490629848_15.jpg','n','1490629867','0') [ RunTime:0.0218s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0208s ]
+
+[ 2017-03-27T23:52:40+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008445s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0098s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0141s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0125s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`content`,`uid`,`described`,`cid`,`tagid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('ldasdlasldla','y','&lt;p&gt;dasdasdasdasdas&lt;/p&gt;','15','dasdasdas','49','2,4','/Public/upload/Article/20170327/thumb1490629943_15.jpg','n','1490629960','0') [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0157s ]
+
+[ 2017-03-27T23:54:18+08:00 ] ::1 /AuthOne/index.php/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004427s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0403s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0148s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0155s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`tagid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试标签','y','on','&lt;p&gt;发大幅度三国杀发电公司发光时代&lt;/p&gt;','15','我要睡觉','48','2,4,3','/Public/upload/Article/20170327/thumb1490630043_15.jpg','n','1490630058','0') [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0159s ]
+SQL: UPDATE `tag` SET `nums`=nums+1 WHERE `id` IN ('2','4','3') [ RunTime:0.0216s ]
+

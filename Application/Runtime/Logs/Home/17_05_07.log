@@ -1,0 +1,1141 @@
+[ 2017-05-07T16:25:27+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004616s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0226s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0075s ]
+
+[ 2017-05-07T16:26:21+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009088s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') LIMIT 1   [ RunTime:0.0099s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0042s ]
+NOTIC: [8] Use of undefined constant error - assumed 'error' D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 73 行.
+
+[ 2017-05-07T16:30:18+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007654s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0685s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0024s ]
+
+[ 2017-05-07T16:30:21+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005855s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0357s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0037s ]
+
+[ 2017-05-07T16:30:24+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=1234
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004188s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%1234%' OR a.title LIKE '%1234') LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%1234%' OR a.title LIKE '%1234') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant error - assumed 'error' D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 73 行.
+
+[ 2017-05-07T16:30:32+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002523s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0224s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0036s ]
+
+[ 2017-05-07T16:32:37+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005505s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0243s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0053s ]
+
+[ 2017-05-07T16:32:41+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004991s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0184s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0032s ]
+
+[ 2017-05-07T16:32:59+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007978s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0079s ]
+
+[ 2017-05-07T16:33:53+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005166s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0043s ]
+
+[ 2017-05-07T16:35:54+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008677s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0217s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0028s ]
+
+[ 2017-05-07T16:36:18+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=1233
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003804s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004848s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%1233%' OR a.title LIKE '%1233') LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%1233%' OR a.title LIKE '%1233') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0034s ]
+
+[ 2017-05-07T16:36:25+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004121s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0081s ]
+
+[ 2017-05-07T16:36:36+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011074s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0684s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0060s ]
+
+[ 2017-05-07T16:40:44+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016689s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1300s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0057s ]
+
+[ 2017-05-07T16:40:50+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006181s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0983s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0070s ]
+
+[ 2017-05-07T16:42:02+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004280s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0291s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0106s ]
+
+[ 2017-05-07T16:45:03+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028722s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0246s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0112s ]
+
+[ 2017-05-07T16:45:10+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003381s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0595s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0035s ]
+
+[ 2017-05-07T16:46:36+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003664s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0792s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0055s ]
+
+[ 2017-05-07T16:48:31+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009221s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1521s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0685s ]
+
+[ 2017-05-07T16:48:38+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008498s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0326s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0040s ]
+
+[ 2017-05-07T16:48:49+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003059s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0707s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0035s ]
+
+[ 2017-05-07T16:49:36+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006454s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0225s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0089s ]
+
+[ 2017-05-07T16:51:06+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017398s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0768s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0167s ]
+
+[ 2017-05-07T16:52:09+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011565s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0243s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0050s ]
+
+[ 2017-05-07T16:52:22+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010114s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0776s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0251s ]
+
+[ 2017-05-07T16:52:50+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005332s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0471s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0022s ]
+
+[ 2017-05-07T16:53:03+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011213s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0618s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0379s ]
+
+[ 2017-05-07T16:54:33+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006648s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0216s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0018s ]
+
+[ 2017-05-07T16:54:42+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007994s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0296s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0094s ]
+
+[ 2017-05-07T16:55:04+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012566s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0334s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0052s ]
+
+[ 2017-05-07T16:55:08+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003148s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0266s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.1164s ]
+
+[ 2017-05-07T16:55:11+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003593s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0336s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0071s ]
+
+[ 2017-05-07T16:55:27+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013175s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0552s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0052s ]
+
+[ 2017-05-07T16:55:33+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005770s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0824s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0029s ]
+
+[ 2017-05-07T16:55:58+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007445s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1328s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0327s ]
+
+[ 2017-05-07T16:57:05+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033386s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0196s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0035s ]
+
+[ 2017-05-07T16:58:17+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005079s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0583s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0063s ]
+
+[ 2017-05-07T16:58:39+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007923s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1383s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0346s ]
+
+[ 2017-05-07T17:02:19+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004359s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0052s ]
+
+[ 2017-05-07T17:02:23+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004363s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0296s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') LIMIT 1   [ RunTime:0.0154s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0104s ]
+
+[ 2017-05-07T17:02:28+08:00 ] ::1 /AuthOne/index.php/Home/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003339s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-05-07T17:03:15+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=12346
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009121s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0186s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%12346%' OR a.title LIKE '%12346') LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%12346%' OR a.title LIKE '%12346') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0033s ]
+
+[ 2017-05-07T17:03:22+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=%E7%AE%80%E5%8D%95
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003730s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%简单%' OR a.title LIKE '%简单') LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%简单%' OR a.title LIKE '%简单') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0024s ]
+
+[ 2017-05-07T17:04:03+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005289s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0421s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0097s ]
+
+[ 2017-05-07T17:04:20+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=123165465
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006048s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0179s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%123165465%' OR a.title LIKE '%123165465') LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123165465%' OR a.title LIKE '%123165465') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0034s ]
+
+[ 2017-05-07T17:04:26+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003787s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0508s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0055s ]
+
+[ 2017-05-07T17:05:53+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003310s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0039s ]
+
+[ 2017-05-07T17:05:59+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003328s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0095s ]
+
+[ 2017-05-07T17:06:01+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003322s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1032s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0068s ]
+
+[ 2017-05-07T17:06:23+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004233s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0847s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0078s ]
+
+[ 2017-05-07T17:06:36+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=%E7%AE%80%E5%8D%95%E5%B0%B1%E5%A5%BD
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002551s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%简单就好%' OR a.title LIKE '%简单就好') LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%简单就好%' OR a.title LIKE '%简单就好') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0038s ]
+
+[ 2017-05-07T17:06:42+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=%E7%AE%80%E5%8D%95
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0217s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%简单%' OR a.title LIKE '%简单') LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%简单%' OR a.title LIKE '%简单') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0047s ]
+
+[ 2017-05-07T17:06:44+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008114s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0187s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0015s ]
+
+[ 2017-05-07T17:06:51+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003701s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0923s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0035s ]
+
+[ 2017-05-07T17:07:16+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004357s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0294s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0052s ]
+
+[ 2017-05-07T17:08:27+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=test
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003845s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0209s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%test%' OR a.title LIKE '%test') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0053s ]
+
+[ 2017-05-07T17:08:29+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003484s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0460s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0011s ]
+
+[ 2017-05-07T17:08:36+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003389s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0543s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0142s ]
+
+[ 2017-05-07T17:08:39+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004602s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0562s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0033s ]
+
+[ 2017-05-07T17:09:10+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010752s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0420s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0115s ]
+
+[ 2017-05-07T17:09:58+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008935s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0561s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0026s ]
+
+[ 2017-05-07T17:10:29+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008820s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0373s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0072s ]
+
+[ 2017-05-07T17:10:34+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003639s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0437s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0211s ]
+
+[ 2017-05-07T17:11:00+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005611s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1282s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0228s ]
+
+[ 2017-05-07T17:11:03+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004195s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0638s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0040s ]
+
+[ 2017-05-07T17:27:17+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004631s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0686s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0021s ]
+
+[ 2017-05-07T17:28:16+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007741s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0427s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0068s ]
+
+[ 2017-05-07T17:30:23+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012432s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0918s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0284s ]
+
+[ 2017-05-07T17:30:29+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007489s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0347s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0221s ]
+
+[ 2017-05-07T17:31:47+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007023s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0442s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0027s ]
+
+[ 2017-05-07T17:33:28+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008794s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0362s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0024s ]
+
+[ 2017-05-07T17:33:41+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006703s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0483s ]
+
+[ 2017-05-07T17:33:48+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005388s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0673s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0056s ]
+
+[ 2017-05-07T17:34:26+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003365s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0208s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0051s ]
+
+[ 2017-05-07T17:34:44+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006332s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0252s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0138s ]
+
+[ 2017-05-07T18:02:52+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011358s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0390s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0057s ]
+
+[ 2017-05-07T18:03:14+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004539s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0357s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0034s ]
+
+[ 2017-05-07T18:03:27+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026362s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0833s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0056s ]
+
+[ 2017-05-07T18:09:03+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006640s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1175s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0251s ]
+
+[ 2017-05-07T18:09:12+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005908s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0397s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0054s ]
+
+[ 2017-05-07T18:10:47+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005128s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0765s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0204s ]
+
+[ 2017-05-07T18:10:56+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006042s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0376s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0043s ]
+
+[ 2017-05-07T18:12:10+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004332s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0944s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0627s ]
+
+[ 2017-05-07T18:15:07+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005633s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0496s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0043s ]
+
+[ 2017-05-07T18:15:26+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007914s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0646s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0042s ]
+
+[ 2017-05-07T18:15:41+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005760s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0306s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0030s ]
+
+[ 2017-05-07T18:17:53+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004167s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0367s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0048s ]
+
+[ 2017-05-07T18:18:03+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003952s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0213s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0028s ]
+
+[ 2017-05-07T18:25:33+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004372s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1023s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0109s ]
+
+[ 2017-05-07T18:25:57+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006278s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0707s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0077s ]
+
+[ 2017-05-07T22:18:00+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005403s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0421s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0287s ]
+
+[ 2017-05-07T22:58:21+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021853s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0475s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0046s ]
+
+[ 2017-05-07T23:01:36+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006392s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1460s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0086s ]
+
+[ 2017-05-07T23:01:37+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013850s ]
+ERR: 模板不存在:./Application/Home/View/Index/addMessage.html
+
+[ 2017-05-07T23:02:58+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006415s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1310s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0354s ]
+
+[ 2017-05-07T23:02:59+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018753s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014224s ]
+
+[ 2017-05-07T23:04:11+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005700s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029512s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006513s ]
+
+[ 2017-05-07T23:10:28+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004924s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002401s ]
+
+[ 2017-05-07T23:13:05+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003765s ]
+
+[ 2017-05-07T23:13:17+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004238s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0278s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0287s ]
+
+[ 2017-05-07T23:13:18+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007563s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002473s ]
+
+[ 2017-05-07T23:13:39+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006854s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004854s ]
+
+[ 2017-05-07T23:14:05+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004242s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0199s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0020s ]
+
+[ 2017-05-07T23:14:06+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008141s ]
+
+[ 2017-05-07T23:14:24+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003612s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001852s ]
+
+[ 2017-05-07T23:14:42+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002040s ]
+
+[ 2017-05-07T23:14:59+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014838s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0209s ]
+SQL: INSERT INTO `message` (`contact`,`content`,`addtime`) VALUES ('776080531@qq.com','12356465','1494170099') [ RunTime:0.1039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002058s ]
+
+[ 2017-05-07T23:15:12+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008334s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0239s ]
+SQL: INSERT INTO `message` (`contact`,`content`,`addtime`) VALUES ('776080531@qq.com','12356465','1494170112') [ RunTime:0.0807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002072s ]
+
+[ 2017-05-07T23:18:38+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005598s ]
+
+[ 2017-05-07T23:18:47+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002705s ]
+
+[ 2017-05-07T23:19:40+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002241s ]
+
+[ 2017-05-07T23:19:46+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `tag` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-07T23:20:09+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003826s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0529s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0365s ]
+
+[ 2017-05-07T23:20:12+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004888s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001403s ]
+
+[ 2017-05-07T23:20:18+08:00 ] ::1 /AuthOne/index.php/Home/Index/tagcate/tagid/2.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `tag` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-07T23:24:40+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013021s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0206s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0030s ]
+
+[ 2017-05-07T23:24:43+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015783s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0203s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0030s ]
+
+[ 2017-05-07T23:24:47+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002197s ]
+
+[ 2017-05-07T23:24:57+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005983s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0931s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0060s ]
+
+[ 2017-05-07T23:25:41+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002594s ]
+
+[ 2017-05-07T23:25:53+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008285s ]
+
+[ 2017-05-07T23:26:04+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005170s ]
+
+[ 2017-05-07T23:29:18+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009740s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0232s ]
+SQL: INSERT INTO `message` (`contact`,`content`,`addtime`) VALUES ('1246546','1321654      ','1494170957') [ RunTime:0.0731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003331s ]
+
+[ 2017-05-07T23:29:38+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004770s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0481s ]
+SQL: INSERT INTO `message` (`contact`,`content`,`addtime`) VALUES ('1246546','1321654      ','1494170977') [ RunTime:0.0766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002587s ]
+
+[ 2017-05-07T23:31:53+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012310s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0198s ]
+SQL: INSERT INTO `message` (`contact`,`content`,`addtime`) VALUES ('1246546','1321654      ','1494171113') [ RunTime:0.0558s ]
+
+[ 2017-05-07T23:32:19+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010924s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0277s ]
+SQL: INSERT INTO `message` (`contact`,`content`,`addtime`) VALUES ('1246546','1321654      ','1494171139') [ RunTime:0.0894s ]
+
+[ 2017-05-07T23:32:29+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006554s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0258s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0040s ]
+
+[ 2017-05-07T23:33:43+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004015s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0228s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0036s ]
+
+[ 2017-05-07T23:33:50+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001354s ]
+
+[ 2017-05-07T23:34:01+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005307s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0189s ]
+SQL: INSERT INTO `message` (`contact`,`content`,`addtime`) VALUES ('776080531','12345132465      ','1494171241') [ RunTime:0.1340s ]
+
+[ 2017-05-07T23:34:07+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009229s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0207s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0025s ]
+
+[ 2017-05-07T23:34:24+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004942s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0447s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0070s ]
+
+[ 2017-05-07T23:34:27+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003802s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001735s ]
+
+[ 2017-05-07T23:34:53+08:00 ] ::1 /AuthOne/index.php/Home/Index/addMessage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008603s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0236s ]
+SQL: INSERT INTO `message` (`contact`,`content`,`addtime`) VALUES ('SAY SOMETHING','1234656','1494171293') [ RunTime:0.0829s ]
+
+[ 2017-05-07T23:34:58+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004513s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0153s ]
+
+[ 2017-05-07T23:35:03+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004654s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0237s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0027s ]
+
+[ 2017-05-07T23:48:11+08:00 ] ::1 /AuthOne/index.php/Home/Index/getActivityList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012401s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0740s ]
+SQL: SELECT `id`,`uid`,`slogan`,`linkurl`,`filepath` FROM `activity` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0073s ]
+

@@ -1,0 +1,32 @@
+[ 2017-03-09T20:35:19+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-09T20:35:20+08:00 ] ::1 /AuthOne/Admin
+ERR: 无法加载控制器:Http:
+
+[ 2017-03-09T20:35:41+08:00 ] ::1 /AuthOne/index.php/Home/Login/login.html
+ERR: 无法加载控制器:Home
+
+[ 2017-03-09T20:35:44+08:00 ] ::1 /AuthOne/index.php/Home
+ERR: 无法加载控制器:Home
+
+[ 2017-03-09T20:35:59+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002393s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = '3e48ed29c651b1ab2c3d46e474a9e447' AND `status` = 1 LIMIT 1   [ RunTime:0.0022s ]
+
+[ 2017-03-09T20:36:06+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003452s ]
+
+[ 2017-03-09T20:36:14+08:00 ] ::1 /AuthOne/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001876s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0038s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1489062974' WHERE `id` = 15 [ RunTime:0.0790s ]
+

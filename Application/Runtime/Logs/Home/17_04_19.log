@@ -1,0 +1,22 @@
+[ 2017-04-19T00:12:36+08:00 ] ::1 /AuthOne/index.php/Home/Index/%7B:U('Index/search')%7D?keyword=98
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002351s ]
+ERR: 非法操作:{:U('Index
+
+[ 2017-04-19T00:13:11+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=98
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002252s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%98%' OR a.title LIKE '%98') LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%98%' OR a.title LIKE '%98') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0025s ]
+
+[ 2017-04-19T00:13:17+08:00 ] ::1 /AuthOne/index.php/Home/Index/search/?keyword=cnblue
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002216s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM article a WHERE (a.title LIKE '%cnblue%' OR a.title LIKE '%cnblue') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%cnblue%' OR a.title LIKE '%cnblue') ORDER BY a.createtime DESC,a.readcounts DESC LIMIT 0,10   [ RunTime:0.0023s ]
+

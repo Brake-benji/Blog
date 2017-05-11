@@ -1,0 +1,506 @@
+[ 2017-05-11T22:29:02+08:00 ] ::1 /Blog/index.php/Backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002578s ]
+
+[ 2017-05-11T22:34:22+08:00 ] ::1 /Blog/index.php/Backend
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003596s ]
+
+[ 2017-05-11T22:34:22+08:00 ] ::1 /Blog/index.php/Backend/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001710s ]
+
+[ 2017-05-11T22:34:23+08:00 ] ::1 /Blog/index.php/Backend/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002795s ]
+
+[ 2017-05-11T22:34:30+08:00 ] ::1 /Blog/index.php/Backend/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001691s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1494513270' WHERE `id` = 15 [ RunTime:0.0839s ]
+
+[ 2017-05-11T22:34:31+08:00 ] ::1 /Blog/index.php/Backend/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001753s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0283s ]
+SQL: SELECT b.rules FROM admin_auth_group_access a LEFT JOIN admin_auth_group b ON b.id=a.group_id  WHERE a.uid = '15'  [ RunTime:0.0329s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001767s ]
+
+[ 2017-05-11T22:34:31+08:00 ] ::1 /Blog/index.php/Backend/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003193s ]
+
+[ 2017-05-11T22:34:36+08:00 ] ::1 /Blog/index.php/Backend/Other/guestHistory.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0137s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0128s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `guest` [ RunTime:0.0720s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `guest` LIMIT 1   [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `guest` [ RunTime:0.0133s ]
+SQL: SELECT a.*,b.title FROM guest a LEFT JOIN article b ON a.record_id = b.id  ORDER BY addtime DESC LIMIT 0,30   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001495s ]
+
+[ 2017-05-11T22:34:44+08:00 ] ::1 /Blog/index.php/Backend/Menu/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0157s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0229s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `status` = 1 AND `is_menu` = 1  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\Blog\Application\Runtime\Cache\Backend\39f76338d12149e04d5e477825a35765.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\Blog\Application\Runtime\Cache\Backend\39f76338d12149e04d5e477825a35765.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\Blog\Application\Runtime\Cache\Backend\39f76338d12149e04d5e477825a35765.php 第 40 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\Blog\Application\Runtime\Cache\Backend\39f76338d12149e04d5e477825a35765.php 第 40 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\Blog\Application\Runtime\Cache\Backend\39f76338d12149e04d5e477825a35765.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002006s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002137s ]
+
+[ 2017-05-11T22:34:47+08:00 ] ::1 /Blog/index.php/Backend/Menu/addMenu.html?id=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001714s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0181s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0157s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0184s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002296s ]
+
+[ 2017-05-11T22:34:50+08:00 ] ::1 /Blog/index.php/Backend/AuthGroup/authGroupList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0140s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0157s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group` [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_auth_group` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `admin_auth_group` WHERE `status` = 1 ORDER BY is_manage DESC,id DESC LIMIT 0,15   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001945s ]
+
+[ 2017-05-11T22:34:52+08:00 ] ::1 /Blog/index.php/Backend/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0155s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0207s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0171s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `admin_user` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `admin_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001730s ]
+
+[ 2017-05-11T22:34:53+08:00 ] ::1 /Blog/index.php/Backend/Blog/tag.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001885s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0164s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0168s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0025s ]
+SQL: select a.id,a.tagname,a.createtime,count(b.tid) as count,c.nick_name as nickname from tag a left join article_tag_relate b on a.id = b.tid left join admin_user c on a.uid = c.id  group by id order by createtime desc [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\Blog\Application\Runtime\Cache\Backend\f8a8946d90a469dd10c6c9d7027d6977.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001728s ]
+
+[ 2017-05-11T22:34:54+08:00 ] ::1 /Blog/index.php/Backend/Blog/addTag.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0176s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0153s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2017-05-11T22:35:07+08:00 ] ::1 /Blog/index.php/Backend/Blog/addTag.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0161s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0145s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001942s ]
+
+[ 2017-05-11T22:35:13+08:00 ] ::1 /Blog/index.php/Backend/Blog/addTag.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001163s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0126s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0151s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `tag` WHERE ( tagname = '一次就好' ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: INSERT INTO `tag` (`tagname`,`uid`,`createtime`) VALUES ('一次就好','15','1494513312') [ RunTime:0.0738s ]
+
+[ 2017-05-11T22:35:15+08:00 ] ::1 /Blog/index.php/Backend/Blog/tag.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0127s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0117s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0016s ]
+SQL: select a.id,a.tagname,a.createtime,count(b.tid) as count,c.nick_name as nickname from tag a left join article_tag_relate b on a.id = b.tid left join admin_user c on a.uid = c.id  group by id order by createtime desc [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\Blog\Application\Runtime\Cache\Backend\f8a8946d90a469dd10c6c9d7027d6977.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001795s ]
+
+[ 2017-05-11T22:35:20+08:00 ] ::1 /Blog/index.php/Backend/Blog/delTag.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0160s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0134s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `tag` WHERE ( id =7 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `tag` WHERE ( id =7 ) [ RunTime:0.0755s ]
+
+[ 2017-05-11T22:35:22+08:00 ] ::1 /Blog/index.php/Backend/Blog/tag.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0155s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0148s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0036s ]
+SQL: select a.id,a.tagname,a.createtime,count(b.tid) as count,c.nick_name as nickname from tag a left join article_tag_relate b on a.id = b.tid left join admin_user c on a.uid = c.id  group by id order by createtime desc [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000734s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001072s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\Blog\Application\Runtime\Cache\Backend\f8a8946d90a469dd10c6c9d7027d6977.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001866s ]
+
+[ 2017-05-11T22:35:25+08:00 ] ::1 /Blog/index.php/Backend/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003027s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0252s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0178s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0189s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0020s ]
+SQL: select ss.*,cc.* from (select a.*,b.nick_name as nickname,c.title as catename from article a left join admin_user b on a.uid = b.id left join admin_auth_rule c on a.cid = c.id) as ss left join (select d.aid,d.tid,e.tagname from article_tag_relate d left join tag e on d.tid = e.id) as cc on ss.id = cc.aid group by id order by createtime desc,readcounts desc limit 0,10 [ RunTime:0.0215s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001907s ]
+
+[ 2017-05-11T22:35:28+08:00 ] ::1 /Blog/index.php/Backend/Blog/addArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0146s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0152s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `id` IN ('46','47','48','49','50','52','53') AND `is_menu` = 1 AND `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`tagname` FROM `tag` ORDER BY createtime DESC  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001163s ]
+
+[ 2017-05-11T22:35:33+08:00 ] ::1 /Blog/index.php/Backend/Other/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0151s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0139s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `activity` LIMIT 1   [ RunTime:0.0259s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0152s ]
+SQL: SELECT a.*,b.user_name as nickname FROM activity a LEFT JOIN admin_user b ON a.uid = b.id  ORDER BY priority,createtime desc LIMIT 0,5   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001376s ]
+
+[ 2017-05-11T22:35:55+08:00 ] ::1 /Blog/index.php/Backend/Blog/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0139s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0144s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0015s ]
+SQL: select ss.*,cc.* from (select a.*,b.nick_name as nickname,c.title as catename from article a left join admin_user b on a.uid = b.id left join admin_auth_rule c on a.cid = c.id) as ss left join (select d.aid,d.tid,e.tagname from article_tag_relate d left join tag e on d.tid = e.id) as cc on ss.id = cc.aid group by id order by createtime desc,readcounts desc limit 0,10 [ RunTime:0.0163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001488s ]
+

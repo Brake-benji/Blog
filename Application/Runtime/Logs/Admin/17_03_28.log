@@ -1,0 +1,22 @@
+[ 2017-03-28T23:37:40+08:00 ] ::1 /Authone/index.php/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002750s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0201s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1490715460' WHERE `id` = 15 [ RunTime:0.0413s ]
+
+[ 2017-03-28T23:38:50+08:00 ] ::1 /Authone/index.php/Menu/viewOpt.html?id=36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003580s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0152s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0184s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0269s ]
+SQL: SELECT * FROM `admin_auth_rule` WHERE `pid` = 36 AND `status` = 1  [ RunTime:0.0034s ]
+
+[ 2017-03-28T23:42:44+08:00 ] ::1 /Authone/index.php/Admin/Index
+ERR: 无法加载控制器:Admin
+

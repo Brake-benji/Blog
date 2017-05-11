@@ -1,0 +1,705 @@
+[ 2017-05-01T11:11:05+08:00 ] ::1 /AuthOne/index.php/Admin/Login/doLogin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003048s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `admin_user` WHERE `user_name` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' AND `status` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: UPDATE `admin_user` SET `lastlogin_time`='1493608265' WHERE `id` = 15 [ RunTime:0.0787s ]
+
+[ 2017-05-01T11:34:49+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+ERR: 1054:Unknown column 'nums' in 'order clause'
+ [ SQL语句 ] : SELECT `id`,`tagname` FROM `tag` ORDER BY nums DESC 
+
+[ 2017-05-01T11:39:18+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004233s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0135s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0148s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0149s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试啦啦','y','on','&lt;p&gt;abccccfasfaf&amp;nbsp;&lt;/p&gt;','15','啦啦啦','53','/Public/upload/Article/20170501/1493609797_15.jpg','n','1493609958','0') [ RunTime:0.0293s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `article_tag_relate` [ RunTime:0.0178s ]
+
+[ 2017-05-01T11:40:21+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003942s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0155s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0137s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0133s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试啦啦','y','on','&lt;p&gt;abccccfasfaf&amp;nbsp;&lt;/p&gt;','15','啦啦啦','53','/Public/upload/Article/20170501/1493609797_15.jpg','n','1493610021','0') [ RunTime:0.0238s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 43 行.
+
+[ 2017-05-01T11:42:06+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/index.html
+ERR: 1054:Unknown column 'a.tagid' in 'on clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename,d.tagname FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id LEFT JOIN tag d ON a.tagid = d.id  WHERE ( a.uid = 15 ) ORDER BY createtime DESC,readcounts DESC 
+
+[ 2017-05-01T11:42:53+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/index.html
+ERR: 1054:Unknown column 'd.tagname' in 'field list'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename,d.tagname FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( a.uid = 15 ) ORDER BY createtime DESC,readcounts DESC 
+
+[ 2017-05-01T11:44:23+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003377s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0155s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0180s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0172s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试啦啦','y','on','&lt;p&gt;按时打发发大水发的说法撒旦&lt;/p&gt;','15','12316556','53','/Public/upload/Article/20170501/1493610230_15.jpg','n','1493610263','0') [ RunTime:0.0329s ]
+NOTIC: [2] explode() expects parameter 2 to be string, array given D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 43 行.
+
+[ 2017-05-01T11:45:40+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004544s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0168s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0138s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0028s ]
+
+[ 2017-05-01T11:50:10+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013642s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0191s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0157s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: res D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: arr D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: res D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: arr D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: res D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: arr D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 47 行.
+NOTIC: [8] Undefined variable: res D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: arr D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 47 行.
+
+[ 2017-05-01T11:50:39+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009939s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0142s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0139s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0136s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('321312312','y','on','&lt;p&gt;312312312312&lt;/p&gt;','15','3123123','53','/Public/upload/Article/20170501/1493610549_15.jpg','n','1493610639','0') [ RunTime:0.0196s ]
+NOTIC: [8] Undefined variable: arr D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: arr D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: arr D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: arr D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `article_tag_relate` [ RunTime:0.0120s ]
+SQL: INSERT INTO `article_tag_relate` (`aid`,`tid`,`createtime`,`is_valid`) VALUES ('19',NULL,'1493610639','y'),('19',NULL,'1493610639','y'),('19',NULL,'1493610639','y'),('19',NULL,'1493610639','y') [ RunTime:0.0015s ]
+
+[ 2017-05-01T11:51:53+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004036s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0164s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0155s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0134s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('321312312','y','on','&lt;p&gt;312312312312&lt;/p&gt;','15','3123123','53','/Public/upload/Article/20170501/1493610549_15.jpg','n','1493610713','0') [ RunTime:0.0280s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `article_tag_relate` [ RunTime:0.0147s ]
+SQL: INSERT INTO `article_tag_relate` (`aid`,`tid`,`createtime`,`is_valid`) VALUES ('20',NULL,'1493610713','y'),('20',NULL,'1493610713','y'),('20','2','1493610713','y'),('20','3','1493610713','y') [ RunTime:0.0022s ]
+
+[ 2017-05-01T11:52:28+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006971s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0258s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0215s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0271s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('321312312','y','on','&lt;p&gt;312312312312&lt;/p&gt;','15','3123123','53','/Public/upload/Article/20170501/1493610549_15.jpg','n','1493610748','0') [ RunTime:0.0297s ]
+
+[ 2017-05-01T11:53:35+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006924s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0165s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0174s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0217s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('321312312','y','on','&lt;p&gt;312312312312&lt;/p&gt;','15','3123123','53','/Public/upload/Article/20170501/1493610549_15.jpg','n','1493610815','0') [ RunTime:0.0292s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 48 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 48 行.
+
+[ 2017-05-01T11:57:24+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005801s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0165s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0227s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0224s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('321312312','y','on','&lt;p&gt;312312312312&lt;/p&gt;','15','3123123','53','/Public/upload/Article/20170501/1493610549_15.jpg','n','1493611044','0') [ RunTime:0.0175s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: key D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 48 行.
+NOTIC: [8] Undefined index:  D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 48 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: key D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 48 行.
+NOTIC: [8] Undefined index:  D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: key D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 48 行.
+NOTIC: [8] Undefined index:  D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 48 行.
+NOTIC: [8] Undefined variable: key D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 48 行.
+NOTIC: [8] Undefined index:  D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 48 行.
+
+[ 2017-05-01T12:01:25+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003282s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0146s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0143s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0163s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('321312312','y','on','&lt;p&gt;312312312312&lt;/p&gt;','15','3123123','53','/Public/upload/Article/20170501/1493610549_15.jpg','n','1493611285','0') [ RunTime:0.0237s ]
+
+[ 2017-05-01T12:02:05+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004283s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0165s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0158s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0141s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('321312312','y','on','&lt;p&gt;312312312312&lt;/p&gt;','15','3123123','53','/Public/upload/Article/20170501/1493610549_15.jpg','n','1493611325','0') [ RunTime:0.0229s ]
+NOTIC: [8] Undefined offset: 0 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+NOTIC: [8] Undefined offset: 1 D:\xampp\htdocs\AuthOne\Application\Admin\Controller\BlogController.class.php 第 46 行.
+SQL: SHOW COLUMNS FROM `article_tag_relate` [ RunTime:0.0131s ]
+SQL: INSERT INTO `article_tag_relate` (`aid`,`tid`,`createtime`,`is_valid`) VALUES ('25','5','1493611325','y'),('25','4','1493611325','y'),('25','3','1493611325','y'),('25','2','1493611325','y') [ RunTime:0.0010s ]
+
+[ 2017-05-01T12:02:47+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001933s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0171s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0123s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0138s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('321312312','y','on','&lt;p&gt;312312312312&lt;/p&gt;','15','3123123','53','/Public/upload/Article/20170501/1493610549_15.jpg','n','1493611367','0') [ RunTime:0.0277s ]
+SQL: SHOW COLUMNS FROM `article_tag_relate` [ RunTime:0.0150s ]
+SQL: INSERT INTO `article_tag_relate` (`aid`,`tid`,`createtime`,`is_valid`) VALUES ('26','5','1493611367','y'),('26','4','1493611367','y'),('26','3','1493611367','y'),('26','2','1493611367','y') [ RunTime:0.0028s ]
+
+[ 2017-05-01T12:03:44+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008385s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0399s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0136s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0141s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试啦啦啦','y','on','&lt;p&gt;车我还是好if你卡上开发复健科历史记录看风景了思考&lt;/p&gt;','15','测试啦啦啦','50','/Public/upload/Article/20170501/1493611404_15.jpg','n','1493611424','0') [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `article_tag_relate` [ RunTime:0.0149s ]
+SQL: INSERT INTO `article_tag_relate` (`aid`,`tid`,`createtime`,`is_valid`) VALUES ('27','5','1493611424','y'),('27','4','1493611424','y') [ RunTime:0.0031s ]
+
+[ 2017-05-01T12:06:14+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004240s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0144s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0132s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0036s ]
+
+[ 2017-05-01T12:06:57+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004864s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0312s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0154s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0031s ]
+
+[ 2017-05-01T13:21:55+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003399s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0377s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0147s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0027s ]
+
+[ 2017-05-01T13:22:11+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004137s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0173s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0159s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0019s ]
+
+[ 2017-05-01T13:26:40+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005253s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0158s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0195s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0222s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('12315654','y','on','&lt;p&gt;发发发125165132&lt;/p&gt;','15','1325645','53','/Public/upload/Article/20170501/1493616376_15.jpg','n','1493616400','0') [ RunTime:0.0160s ]
+
+[ 2017-05-01T13:27:58+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001960s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0161s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0152s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0164s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('312312','y','y','&lt;p&gt;3123123123&lt;/p&gt;','15','312312312','52','/Public/upload/Article/20170501/1493616459_15.png','n','1493616477','0') [ RunTime:0.1650s ]
+SQL: SHOW COLUMNS FROM `article_tag_relate` [ RunTime:0.0166s ]
+SQL: INSERT INTO `article_tag_relate` (`aid`,`tid`,`createtime`,`is_valid`) VALUES ('29','3','1493616478','y'),('29','2','1493616478','y') [ RunTime:0.0024s ]
+
+[ 2017-05-01T16:49:47+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/addArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007588s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0226s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0212s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0152s ]
+SQL: INSERT INTO `article` (`title`,`istop`,`isrecommend`,`content`,`uid`,`described`,`cid`,`artpicture`,`is_valid`,`createtime`,`readcounts`) VALUES ('测试时啦啦啦','y','y','&lt;p&gt;测试啦啦啦&lt;/p&gt;','15','hello','47','/Public/upload/Article/20170501/1493628564_15.jpg','n','1493628587','0') [ RunTime:0.0362s ]
+SQL: SHOW COLUMNS FROM `article_tag_relate` [ RunTime:0.0148s ]
+SQL: INSERT INTO `article_tag_relate` (`aid`,`tid`,`createtime`,`is_valid`) VALUES ('30','2','1493628587','y') [ RunTime:0.0028s ]
+
+[ 2017-05-01T16:55:49+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/index.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN article_tag_relate d ON a.id = b.aid) e LEFT JOIN tag f ON e.tid = f.id  WH' at line 1
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename,d.tagname FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id (LEFT JOIN article_tag_relate d ON a.id = b.aid) e LEFT JOIN tag f ON e.tid = f.id  WHERE ( a.uid = 15 ) ORDER BY createtime DESC,readcounts DESC LIMIT 0,10  
+
+[ 2017-05-01T17:00:15+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/index.html
+ERR: 1054:Unknown column 'b.aid' in 'on clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename,d.tid FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id LEFT JOIN article_tag_relate d ON a.id = b.aid  WHERE ( a.uid = 15 ) ORDER BY createtime DESC,readcounts DESC LIMIT 0,10  
+
+[ 2017-05-01T22:21:06+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/changeStatus.html?id=30
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004882s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0142s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0139s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `article` WHERE ( id =30 and is_valid = 'n' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `article` SET `is_valid`='y' WHERE ( id =30 ) [ RunTime:0.0363s ]
+
+[ 2017-05-01T22:21:12+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/editArticle/id/30
+ERR: 1054:Unknown column 'a.tagid' in 'on clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name,c.tagname,d.title as catename,d.id as cid FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN tag c ON a.tagid = c.id LEFT JOIN admin_auth_rule d ON a.cid = d.id  WHERE ( a.id =30 ) LIMIT 1  
+
+[ 2017-05-01T22:21:12+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004141s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0199s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0269s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0267s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T22:24:48+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003128s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0221s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0218s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0322s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T22:24:49+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/editArticle/id/30
+ERR: 1054:Unknown column 'c.aid' in 'field list'
+ [ SQL语句 ] : SELECT a.*,b.user_name,c.aid,c.tid,d.title as catename,d.id as cid FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule d ON a.cid = d.id  WHERE ( a.id =30 ) LIMIT 1  
+
+[ 2017-05-01T22:27:22+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003188s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0274s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0239s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0287s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T22:31:56+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008909s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0399s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0550s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0669s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T22:33:11+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008137s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0545s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0812s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0166s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.1581s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T22:41:06+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008225s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0361s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0191s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0533s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T22:45:06+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009951s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0206s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0393s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0186s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T22:46:05+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004865s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0194s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0211s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0217s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T22:53:03+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005391s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0199s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0244s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0179s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T22:54:13+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016270s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0374s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0299s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0415s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:00:18+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007740s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0216s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0258s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0384s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:02:02+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008217s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0882s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0465s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0437s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:02:40+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/tag.html
+ERR: 1054:Unknown column 'b.uid' in 'field list'
+ [ SQL语句 ] : SELECT a.*,b.uid,b.tagname FROM tag a LEFT JOIN article_tag_relate b ON b.is_valid='y' and b.tid = a.id group by b.tid  
+
+[ 2017-05-01T23:02:45+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005695s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0621s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0426s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0478s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:02:46+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002535s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004054s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.1168s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0709s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0330s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:04:34+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011217s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0343s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0347s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0379s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:06:35+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017677s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0314s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0415s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0591s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:08:29+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004355s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0221s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0211s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0269s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:10:40+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007633s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0200s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0297s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0331s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:11:23+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006508s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0369s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0356s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0314s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:11:50+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004186s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0295s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0340s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0537s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:12:16+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/editArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003263s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0407s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0418s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0480s ]
+SQL: UPDATE `article` SET `id`='30',`title`='biubiubiu~',`istop`='y',`isrecommend`='y',`content`='&lt;p&gt;测试啦啦啦&lt;/p&gt;',`uid`='15',`described`='hello',`cid`='47',`is_valid`='n' WHERE ( id = 30 ) [ RunTime:0.0425s ]
+
+[ 2017-05-01T23:13:54+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003842s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0212s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0167s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0165s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:14:54+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/editArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003258s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0363s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0210s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0271s ]
+SQL: UPDATE `article` SET `id`='30',`title`='向前看',`istop`='y',`isrecommend`='y',`content`='&lt;p&gt;测试啦啦啦&lt;/p&gt;',`uid`='15',`described`='啦啦啦啦啦',`cid`='47',`artpicture`='/Public/upload/Article/20170501/1493651651_15.jpg',`is_valid`='n' WHERE ( id = 30 ) [ RunTime:0.0627s ]
+
+[ 2017-05-01T23:15:50+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003644s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0290s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0366s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0389s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:19:44+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/editArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006438s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0192s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0185s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0643s ]
+SQL: UPDATE `article` SET `id`='30',`title`='一次就好啦啦啦',`istop`='y',`content`='&lt;p&gt;测试啦啦啦法法&lt;/p&gt;',`uid`='15',`described`='啦啦啦啦啦',`cid`='47',`isrecommend`='n',`is_valid`='n' WHERE ( id = 30 ) [ RunTime:0.0771s ]
+
+[ 2017-05-01T23:20:18+08:00 ] ::1 /AuthOne/index.php/Admin/Other/editAd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003020s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0285s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0367s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.0466s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `activity` WHERE ( id = ) LIMIT 1  
+
+[ 2017-05-01T23:20:29+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/editArticle.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004446s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0320s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0629s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0331s ]
+SQL: UPDATE `article` SET `id`='30',`title`='一次就好啦啦啦',`istop`='y',`isrecommend`='y',`content`='&lt;p&gt;测试啦啦啦法法&lt;/p&gt;',`uid`='15',`described`='啦啦啦啦啦',`cid`='47',`is_valid`='n' WHERE ( id = 30 ) [ RunTime:0.0493s ]
+
+[ 2017-05-01T23:20:40+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/changeStatus.html?id=30
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002612s ]
+SQL: SHOW COLUMNS FROM `admin_auth_group_access` [ RunTime:0.0317s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM admin_auth_group_access a INNER JOIN admin_auth_group g on a.group_id=g.id  WHERE ( a.uid='15' and g.status='1' )  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0224s ]
+SQL: SELECT `condition`,`menu_name` FROM `admin_auth_rule` WHERE `id` IN ('2','36','14','21','24','25','26','27','22','28','29','30','31','23','32','33','34','35','37','56','57','58','59','54','55','63','64','65','66','38','39','40','41','42','43','44','45','60','61','62','67','46','47','48','49','50','52','53') AND `type` = 1 AND `status` = 1  [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `article` WHERE ( id =30 and is_valid = 'n' ) LIMIT 1   [ RunTime:0.0038s ]
+SQL: UPDATE `article` SET `is_valid`='y' WHERE ( id =30 ) [ RunTime:0.0522s ]
+
+[ 2017-05-01T23:21:00+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/tag.html
+ERR: 1054:Unknown column 'b.uid' in 'field list'
+ [ SQL语句 ] : SELECT a.*,b.uid,b.tagname FROM tag a LEFT JOIN article_tag_relate b ON b.is_valid='y' and b.tid = a.id group by b.tid  
+
+[ 2017-05-01T23:22:06+08:00 ] ::1 /AuthOne/index.php/Admin/Blog/tag.html
+ERR: 1054:Unknown column 'b.tagname' in 'field list'
+ [ SQL语句 ] : SELECT a.*,b.tid,b.tagname FROM tag a LEFT JOIN article_tag_relate b ON b.is_valid='y' and b.tid = a.id group by b.tid  
+

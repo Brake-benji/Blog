@@ -1,0 +1,652 @@
+[ 2017-03-20T10:40:52+08:00 ] ::1 /AuthOne/index.php/Index/detail/id/3
+ERR: 1052:Column 'id' in where clause is ambiguous
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and id =3 ) LIMIT 1  
+
+[ 2017-03-20T10:41:08+08:00 ] ::1 /AuthOne/index.php/Index/detail/id/3
+ERR: 模板不存在:./Application/Home/View/Index/detail.html
+
+[ 2017-03-20T13:53:35+08:00 ] ::1 /AuthOne/index.php/Index/detail/id/$v.id.html
+ERR: 1054:Unknown column '$v.id' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and a.id =$v.id ) LIMIT 1  
+
+[ 2017-03-20T13:54:15+08:00 ] ::1 /AuthOne/index.php/Index/detail/id/$v.id.html
+ERR: 1054:Unknown column '$v.id' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and a.id =$v.id ) LIMIT 1  
+
+[ 2017-03-20T13:54:46+08:00 ] ::1 /AuthOne/index.php/Index/detail/id/$v.id.html
+ERR: 1054:Unknown column '$v.id' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and a.id =$v.id ) LIMIT 1  
+
+[ 2017-03-20T13:56:26+08:00 ] ::1 /AuthOne/index.php/Index/detail.html/id/$v.id
+ERR: 非法操作:detail.html
+
+[ 2017-03-20T15:33:09+08:00 ] ::1 /AuthOne/index.php/Index/search/keyword/bule
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and Array ) ORDER BY a.createtime DESC,a.readcounts DESC 
+
+[ 2017-03-20T15:33:54+08:00 ] ::1 /AuthOne/index.php/Index/search/keyword/bule
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and Array ) ORDER BY a.createtime DESC,a.readcounts DESC 
+
+[ 2017-03-20T15:34:41+08:00 ] ::1 /AuthOne/index.php/Index/search/keyword/bule
+ERR: 1054:Unknown column 'b.tagname' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%bule%' OR a.title LIKE '%bule') AND b.tagname LIKE '%bule%' ORDER BY a.createtime DESC,a.readcounts DESC 
+
+[ 2017-03-20T15:36:50+08:00 ] ::1 /AuthOne/index.php/Index/search/keyword/bule
+ERR: Think\Controller:ajaxError方法不存在！
+
+[ 2017-03-20T16:01:41+08:00 ] ::1 /AuthOne/index.php/Index/detail/id/element,layer.js
+ERR: 1054:Unknown column 'element' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( is_valid = 'y' and a.id =element,layer.js ) LIMIT 1  
+
+[ 2017-03-20T16:06:02+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017135s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0351s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0025s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+ERR: 模板不存在:./Application/Home/View/Index/search.html
+
+[ 2017-03-20T16:06:33+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005096s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0206s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0046s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+ERR: 模板不存在:./Application/Home/View/Index/search.html
+
+[ 2017-03-20T16:09:33+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005341s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0189s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0032s ]
+ERR: Think\Controller:ajaxSuccess方法不存在！
+
+[ 2017-03-20T16:10:29+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003472s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0500s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0034s ]
+
+[ 2017-03-20T16:12:28+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=hdja
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007245s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0301s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%hdja%' OR a.title LIKE '%hdja') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0042s ]
+ERR: Think\Controller:ajaxError方法不存在！
+
+[ 2017-03-20T16:14:12+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=da
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010462s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0203s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%da%' OR a.title LIKE '%da') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0054s ]
+ERR: Think\Controller:ajaxError方法不存在！
+
+[ 2017-03-20T16:14:37+08:00 ] ::1 /AuthOne/index.php/Index/search/keyword
+ERR: Think\Controller:ajaxError方法不存在！
+
+[ 2017-03-20T16:16:28+08:00 ] ::1 /AuthOne/index.php/Index/search/keyword
+ERR: Think\Controller:ajaxError方法不存在！
+
+[ 2017-03-20T16:16:32+08:00 ] ::1 /AuthOne/index.php/Index/search/keyword
+ERR: Think\Controller:ajaxError方法不存在！
+
+[ 2017-03-20T16:17:29+08:00 ] ::1 /AuthOne/index.php/Index/search/keyword/da
+ERR: Think\Controller:ajaxError方法不存在！
+
+[ 2017-03-20T16:20:05+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=da
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009101s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0453s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%da%' OR a.title LIKE '%da') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0037s ]
+
+[ 2017-03-20T16:37:53+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=da
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005416s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0183s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%da%' OR a.title LIKE '%da') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0017s ]
+
+[ 2017-03-20T16:38:01+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=da
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012810s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0865s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%da%' OR a.title LIKE '%da') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0070s ]
+
+[ 2017-03-20T16:38:24+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005818s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0552s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0059s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+ERR: 模板不存在:./Application/Home/View/Index/search.html
+
+[ 2017-03-20T16:38:29+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004037s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0347s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0121s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+ERR: 模板不存在:./Application/Home/View/Index/search.html
+
+[ 2017-03-20T16:52:11+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004954s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0397s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0057s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0412s ]
+SQL: SELECT `id`,`title`,`pid` FROM `admin_auth_rule` WHERE `id` IN ('46','47','48','49','50','52','53')  [ RunTime:0.0071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.079396s ]
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Home\7e30c6d006f20aae9e38db98723a6055.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.096263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012228s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.013707s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0446s ]
+SQL: SELECT `linkname`,`linkurl` FROM `links` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.175946s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014152s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.081692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.094404s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015077s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.081692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.095299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003065s ]
+
+[ 2017-03-20T16:52:19+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003127s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0171s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0039s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0149s ]
+SQL: SELECT `id`,`title`,`pid` FROM `admin_auth_rule` WHERE `id` IN ('46','47','48','49','50','52','53')  [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001041s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.046657s ]
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Home\7e30c6d006f20aae9e38db98723a6055.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.066710s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014425s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.016218s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0254s ]
+SQL: SELECT `linkname`,`linkurl` FROM `links` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.115793s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016352s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.050076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.065420s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017050s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.050076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.066056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002121s ]
+
+[ 2017-03-20T16:54:06+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007887s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0318s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0041s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0194s ]
+SQL: SELECT `id`,`title`,`pid` FROM `admin_auth_rule` WHERE `id` IN ('46','47','48','49','50','52','53')  [ RunTime:0.0044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.045608s ]
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Home\7e30c6d006f20aae9e38db98723a6055.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.059683s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010113s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011041s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0212s ]
+SQL: SELECT `linkname`,`linkurl` FROM `links` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0146s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.109436s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013257s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.050259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.062660s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013928s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.050259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.063284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002143s ]
+
+[ 2017-03-20T16:56:23+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=da
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003242s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0166s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%da%' OR a.title LIKE '%da') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0026s ]
+
+[ 2017-03-20T16:56:29+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017930s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0255s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0327s ]
+SQL: SELECT `id`,`title`,`pid` FROM `admin_auth_rule` WHERE `id` IN ('46','47','48','49','50','52','53')  [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.064629s ]
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Home\7e30c6d006f20aae9e38db98723a6055.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.081650s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017739s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.003205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.019193s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0172s ]
+SQL: SELECT `linkname`,`linkurl` FROM `links` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.120657s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009957s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.042726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.050749s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010568s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.042726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.051368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002588s ]
+
+[ 2017-03-20T16:57:53+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004531s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0178s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0036s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0201s ]
+SQL: SELECT `id`,`title`,`pid` FROM `admin_auth_rule` WHERE `id` IN ('46','47','48','49','50','52','53')  [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.049958s ]
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Home\7e30c6d006f20aae9e38db98723a6055.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000960s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.065088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011076s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012922s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0407s ]
+SQL: SELECT `linkname`,`linkurl` FROM `links` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.129893s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015090s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.063580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.077885s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015720s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.063580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.078463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002297s ]
+
+[ 2017-03-20T17:00:37+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004098s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0215s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0063s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000416s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`title`,`pid` FROM `admin_auth_rule` WHERE `id` IN ('46','47','48','49','50','52','53')  [ RunTime:0.0088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.065345s ]
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Home\7e30c6d006f20aae9e38db98723a6055.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.079996s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011389s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012345s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0397s ]
+SQL: SELECT `linkname`,`linkurl` FROM `links` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0193s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.153000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011867s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.074550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.085439s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012551s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.074550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.086065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001816s ]
+
+[ 2017-03-20T17:01:03+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004772s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0325s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0051s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0219s ]
+SQL: SELECT `id`,`title`,`pid` FROM `admin_auth_rule` WHERE `id` IN ('46','47','48','49','50','52','53')  [ RunTime:0.0044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.052223s ]
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Home\7e30c6d006f20aae9e38db98723a6055.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000999s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.066792s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012400s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.002491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.014051s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0377s ]
+SQL: SELECT `linkname`,`linkurl` FROM `links` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.125205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012601s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.059181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.070958s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013375s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.059181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.071671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002005s ]
+
+[ 2017-03-20T17:01:22+08:00 ] ::1 /AuthOne/index.php/Index/search.html?keyword=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002345s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0158s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+NOTIC: [8] Trying to get property of non-object D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE (a.title LIKE '%123%' OR a.title LIKE '%123') ORDER BY a.createtime DESC,a.readcounts DESC  [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: page D:\xampp\htdocs\AuthOne\Application\Home\Controller\IndexController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+SQL: SHOW COLUMNS FROM `admin_auth_rule` [ RunTime:0.0192s ]
+SQL: SELECT `id`,`title`,`pid` FROM `admin_auth_rule` WHERE `id` IN ('46','47','48','49','50','52','53')  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.043855s ]
+NOTIC: [8] Undefined variable: title D:\xampp\htdocs\AuthOne\Application\Runtime\Cache\Home\7e30c6d006f20aae9e38db98723a6055.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.055804s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008995s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010184s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0151s ]
+SQL: SELECT `linkname`,`linkurl` FROM `links` WHERE ( is_valid = 'y' ) ORDER BY createtime DESC LIMIT 5   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.085294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009074s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.031180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.039566s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009611s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.031180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.040064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001560s ]
+
+[ 2017-03-20T17:31:31+08:00 ] ::1 /AuthOne/index.php/Index/category/cid/52
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT a.*,b.user_name as nickname,c.title as catename FROM article a LEFT JOIN admin_user b ON a.uid = b.id LEFT JOIN admin_auth_rule c ON a.cid = c.id  WHERE ( a.is_valid = 'y' and Array ) ORDER BY a.createtime DESC,a.readcounts DESC 
+
+[ 2017-03-20T17:44:01+08:00 ] ::1 /AuthOne/index.php/Index/category/cid/index.php/Index/detail/id/3
+ERR: 1054:Unknown column 'index.php' in 'where clause'
+ [ SQL语句 ] : SELECT `id`,`pid`,`title` FROM `admin_auth_rule` WHERE ( id = index.php OR pid =index.php ) 
+

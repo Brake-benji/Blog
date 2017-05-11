@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{$title}</title>
+	<meta charset="utf-8">
+	<meta keywords="青椒白饭，青椒白饭Mr.Xie,青椒白饭Mr.Xie的个人博客，个人博客，博客，个人网站，个人主页">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/Home/index.css" media="all">
+	<link rel="stylesheet" href="__PUBLIC__/plugins/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="__PUBLIC__/css/global.css" media="all">
+	<link rel="stylesheet" href="__PUBLIC__/plugins/font-awesome/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<!-- header start -->
+	<div class="header-content">
+		<div class="header-main">
+			<ul class="layui-nav" style="padding:0px;border-radius: 0px;width:600px;display: inline-block;"	>
+			<li class="layui-nav-item layui-this"><a href="{:U('Index/index')}">首页</a></li>
+			  <volist name="cate_list" id="vo">
+				  <volist name="vo['son']" id="ko">
+				  	<li class="layui-nav-item">
+				  	<notempty name="ko['son']">
+				  		<a href="/Blog/index.php/Home/Index/category/cid/{$ko.id}">{$ko.title}</a>
+				  		<dl class="layui-nav-child">
+				  		<volist name="ko['son']" id="yo">
+				  		<dd><a href="/Blog/index.php/Home/Index/category/cid/{$yo.id}">{$yo.title}</a></dd>
+				  		</volist>
+				  		</dl>			 
+				  	<else />
+				  	<a href="/Blog/index.php/Home/Index/category/cid/{$ko.id}">{$ko.title}</a>
+				  	</notempty>
+				  	</li>
+				  </volist>
+			  </volist>
+			</ul>
+
+			<div class="search-form">
+				<div class="layui-form-item" style="margin-bottom: 0px;height: 60px;">
+				    <div class="layui-input-block" style="top:11px;">
+				      <input type="text" name="keyword" id="keyword" required  lay-verify="required" placeholder="请输入文章标题或标签" autocomplete="off" class="layui-input" style="border-radius: 20px;"><i class="layui-icon" style="position: absolute;float: right;top: -8px;right: 10px;cursor: pointer;">&#xe615;</i>   
+				    </div>
+				  </div>
+			</div>
+		</div>
+	</div>
+	<!-- header end-->
