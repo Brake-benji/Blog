@@ -9,10 +9,10 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" type="text/css" href="/Blog/Public/css/Home/index.css" media="all">
-	<link rel="stylesheet" href="/Blog/Public/plugins/layui/css/layui.css" media="all" />
-	<link rel="stylesheet" href="/Blog/Public/css/global.css" media="all">
-	<link rel="stylesheet" href="/Blog/Public/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/Public/css/Home/index.css" media="all">
+	<link rel="stylesheet" href="/Public/plugins/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="/Public/css/global.css" media="all">
+	<link rel="stylesheet" href="/Public/plugins/font-awesome/css/font-awesome.min.css">
 	
 </head>
 <body>
@@ -20,14 +20,14 @@
 	<div class="header-content">
 		<div class="header-main">
 			<ul class="layui-nav" style="padding:0px;border-radius: 0px;width:600px;display: inline-block;"	>
-			<li class="layui-nav-item layui-this"><a href="<?php echo U('Index/index');?>">首页</a></li>
+			<li class="layui-nav-item"><a href="<?php echo U('Index/index');?>">首页</a></li>
 			  <?php if(is_array($cate_list)): $i = 0; $__LIST__ = $cate_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if(is_array($vo['son'])): $i = 0; $__LIST__ = $vo['son'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$ko): $mod = ($i % 2 );++$i;?><li class="layui-nav-item">
-				  	<?php if(!empty($ko['son'])): ?><a href="/Blog/index.php/Home/Index/category/cid/<?php echo ($ko["id"]); ?>"><?php echo ($ko["title"]); ?></a>
+				  	<?php if(!empty($ko['son'])): ?><a href="/Home/Index/category/cid/<?php echo ($ko["id"]); ?>"><?php echo ($ko["title"]); ?></a>
 				  		<dl class="layui-nav-child">
-				  		<?php if(is_array($ko['son'])): $i = 0; $__LIST__ = $ko['son'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$yo): $mod = ($i % 2 );++$i;?><dd><a href="/Blog/index.php/Home/Index/category/cid/<?php echo ($yo["id"]); ?>"><?php echo ($yo["title"]); ?></a></dd><?php endforeach; endif; else: echo "" ;endif; ?>
+				  		<?php if(is_array($ko['son'])): $i = 0; $__LIST__ = $ko['son'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$yo): $mod = ($i % 2 );++$i;?><dd><a href="/Home/Index/category/cid/<?php echo ($yo["id"]); ?>"><?php echo ($yo["title"]); ?></a></dd><?php endforeach; endif; else: echo "" ;endif; ?>
 				  		</dl>			 
 				  	<?php else: ?>
-				  	<a href="/Blog/index.php/Home/Index/category/cid/<?php echo ($ko["id"]); ?>"><?php echo ($ko["title"]); ?></a><?php endif; ?>
+				  	<a href="/Home/Index/category/cid/<?php echo ($ko["id"]); ?>"><?php echo ($ko["title"]); ?></a><?php endif; ?>
 				  	</li><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
 			</ul>
 

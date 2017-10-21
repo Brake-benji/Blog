@@ -5,7 +5,7 @@
 		<h3>博主信息</h3>
 		<ol class="mydetail_content">
 			<li>Name：青椒白饭Mr.Xie</li>
-			<li>Occupation：PHP程序猿，伪WEB前端</li>
+			<li>Occupation：PHP程序猿，伪前端~</li>
 			<li>Slogan：总有人要赢的，为什么不是我呢？</li>
 		</ol>
 	</div>

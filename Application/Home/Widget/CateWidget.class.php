@@ -16,7 +16,7 @@ class CateWidget extends Controller{
         $clist = get_column($allCategory);*/
 
         //$res = getAllChildrenId('46');
-        $map['id'] = array('in',array('46','47','48','49','50','52','53'));
+        $map['id'] = array('in',array('46','47','48','49','50','53'));
         $res = M('admin_auth_rule')->field('id,title,pid')->where($map)->select();
         $arr = $this->ForLevel($res);
         //dump($arr);die;

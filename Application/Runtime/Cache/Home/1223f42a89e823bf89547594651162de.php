@@ -38,8 +38,8 @@
 			<?php echo W('Cate/footer');?>
 	</div>
 	
-	<script type="text/javascript" src="/Blog/Public/plugins/layui/layui.js"></script>
-	<script type="text/javascript" src="/Blog/Public/js/common.js"></script>
+	<script type="text/javascript" src="/Public/plugins/layui/layui.js"></script>
+	<script type="text/javascript" src="/Public/js/common.js"></script>
 	<script>
 		layui.use('element', function(){
 		    var element = layui.element();

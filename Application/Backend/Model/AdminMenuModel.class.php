@@ -190,4 +190,16 @@ class AdminMenuModel extends BaseModel
         );
         return $this->where($where)->find();
     }
+
+    /**
+    *@description 通过父id查找所有子id
+    *
+    */
+    public function selectIdByPid($pid){
+        $where = array(
+            'pid' => $pid,
+            'status' => parent::NORMAL_STATUS
+        );
+        return $this->where($where)->select();
+    }
 }

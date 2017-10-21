@@ -1,4 +1,3 @@
-var _static = "/Blog";
 
 layui.use(['jquery','element','layer'], function(){
     var layer = layui.layer;
@@ -45,7 +44,7 @@ layui.use(['jquery','element','layer'], function(){
 
 	//留言&反馈
 	$('body').on('click','#leave_message',function(){
-		var url = '/Blog/index.php/Home/Index/addMessage';
+		var url = '/Home/Index/addMessage';
 		$.get(url,function(data){
 			if(data.status == 'error'){
 				layer.msg(data.msg,{icon: 5});
@@ -66,11 +65,11 @@ layui.use(['jquery','element','layer'], function(){
 
 
 	function search(keyword){
-		var url = "/Blog/index.php/Home/Index/search/",
+		var url = "/Home/Index/search/",
 		params = {keyword:keyword};
 		$.getJSON(url,params,function(data){
 		if (data.status == "true") {
-			location.href = '/Blog/index.php/Home/Index/search/keyword/'+keyword;
+			location.href = '/Home/Index/search/keyword/'+keyword;
 		}else{
 			layer.open({
 					title:'提示',
@@ -82,12 +81,12 @@ layui.use(['jquery','element','layer'], function(){
 	}
 
 	function activitylist(){
-		$.getJSON(_static+'/index.php/Home/Index/getActivityList',function(data){
+		$.getJSON('/Home/Index/getActivityList',function(data){
 			if (data.status == "true") {
 				var ct = [],rs = data.result;
 				ct.push(	'<ul>');
 				$.each(rs,function(k,v){
-					ct.push(	'<li class="activity-img" data-id="'+v.id+'"><a href="'+v.linkurl+'" target="_blank" title="'+v.slogan+'"><img src="'+_static+v.filepath+'"></a></li>');
+					ct.push(	'<li class="activity-img" data-id="'+v.id+'"><a href="'+v.linkurl+'" target="_blank" title="'+v.slogan+'"><img src="'+v.filepath+'"></a></li>');
 				});
 				ct.push(	'</ul>');
 				ct.push(	'<div class="nav">');
@@ -99,9 +98,10 @@ layui.use(['jquery','element','layer'], function(){
 				$('.activity-list ul li:first,.activity-list .nav li:first').addClass("active");
 			}else{
 				layer.open({
-							title:'提示',
-							content:data.msg
-						});
+					title:'提示',
+					content:data.msg,
+					time:1000
+				});
 			}
 		});
 	}

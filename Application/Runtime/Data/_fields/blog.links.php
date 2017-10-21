@@ -1,0 +1,1 @@
+a:8:{i:0;s:2:"id";i:1;s:3:"uid";i:2;s:8:"linkname";i:3;s:7:"linkurl";i:4;s:10:"createtime";i:5;s:8:"is_valid";s:3:"_pk";s:2:"id";s:5:"_type";a:6:{s:2:"id";s:7:"int(11)";s:3:"uid";s:7:"int(11)";s:8:"linkname";s:12:"varchar(255)";s:7:"linkurl";s:12:"varchar(255)";s:10:"createtime";s:7:"int(11)";s:8:"is_valid";s:7:"char(1)";}}

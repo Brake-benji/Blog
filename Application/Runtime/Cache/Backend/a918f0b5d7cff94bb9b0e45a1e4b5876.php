@@ -11,9 +11,9 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="/Blog/Public/plugins/layui/css/layui.css" media="all" />
-	<link rel="stylesheet" href="/Blog/Public/css/global.css" media="all">
-	<link rel="stylesheet" href="/Blog/Public/plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/Public/plugins/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="/Public/css/global.css" media="all">
+	<link rel="stylesheet" href="/Public/plugins/font-awesome/css/font-awesome.min.css">
 	
 	</head>
 
@@ -98,7 +98,7 @@
 				<i class="layui-icon">&#xe602;</i>
 			</div>
 			<div class="site-mobile-shade"></div>
-			<script type="text/javascript" src="/Blog/Public/plugins/layui/layui.js"></script>
+			<script type="text/javascript" src="/Public/plugins/layui/layui.js"></script>
 			<script>
 				layui.use(['element', 'layer'], function() {
 					var element = layui.element(),

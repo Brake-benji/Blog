@@ -206,7 +206,7 @@ class OtherController extends CommonController{
 	/**
 	 * 添加友情链接
 	 */
-	public function addLinks(){
+	public function addlinks(){
 		if (IS_POST) {
 			$linkName = I('linkname');
 			$linkUrl = I('linkurl');
@@ -217,8 +217,7 @@ class OtherController extends CommonController{
 			if (!$userinfo) {
 				$this->ajaxError("尚未登录，不能添加友情链接");
 			}
-		
-			if (strstr($linkUrl, 'http')) {
+			if (strstr($linkUrl, 'http') || (strstr($linkUrl,'https'))) {
 				$data['uid'] = $userinfo['uid'];
 				$data['linkname'] = $linkName;
 				$data['linkurl'] = $linkUrl;
@@ -231,7 +230,7 @@ class OtherController extends CommonController{
 					$this->ajaxError("友情链接添加失败");
 				}
 			}else{
-				$this->ajaxError("链接不合法，应以http开头");
+				$this->ajaxError("链接不合法");
 			}
 		}else{
 			$this->display();
@@ -254,7 +253,7 @@ class OtherController extends CommonController{
 				$this->ajaxError("链接不存在或表单项为空");
 			}
 
-			if (preg_match("/^http:/", $linkUrl)) {
+			if (strstr($linkUrl, 'http') || (strstr($linkUrl,'https'))) {
 				$data['linkname'] = $linkName;
 				$data['linkurl'] = $linkUrl;
 				$update = M('links')->where('id ='.$id)->data($data)->save();
@@ -316,7 +315,7 @@ class OtherController extends CommonController{
 	 *
 	 * 查看留言信息
 	 */
-	public function showMessage(){
+	public function showmessage(){
 		$total = M('message')->count();
 		$page = new \Think\Page($total,10);
 		$show = $page->show();

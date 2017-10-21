@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>活动管理</title>
-		<link rel="stylesheet" href="/Blog/Public/plugins/layui/css/layui.css" media="all" />
-		<link rel="stylesheet" href="/Blog/Public/css/global.css" media="all">
-		<link rel="stylesheet" href="/Blog/Public/css/other.css" media="all">
-		<link rel="stylesheet" href="/Blog/Public/plugins/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/Public/plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="/Public/css/global.css" media="all">
+		<link rel="stylesheet" href="/Public/css/other.css" media="all">
+		<link rel="stylesheet" href="/Public/plugins/font-awesome/css/font-awesome.min.css">
 		<style type="text/css">
 			.list-page {
 				text-align: center;
@@ -48,7 +48,7 @@
 					  <tbody>
 					  <?php if(is_array($list)): foreach($list as $key=>$v): ?><tr>
 					      <td><?php echo ($v["nickname"]); ?></td>
-					      <td><img src="/Blog<?php echo ($v["filepath"]); ?>" style="width:300px;"></td>
+					      <td><img src="<?php echo ($v["filepath"]); ?>" style="width:300px;"></td>
 					      <td><?php echo ($v["slogan"]); ?></td>
 					      <td><?php echo ($v["comment"]); ?></td>
 					      <td><?php echo ($v["priority"]); ?></td>
@@ -75,7 +75,7 @@
 			
 
 		</div>
-		<script type="text/javascript" src="/Blog/Public/plugins/layui/layui.js"></script>
+		<script type="text/javascript" src="/Public/plugins/layui/layui.js"></script>
 		<script>
 			layui.use(['laypage','layer','form'], function() {
 				var laypage = layui.laypage,

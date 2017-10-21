@@ -17,5 +17,5 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="/Blog/Public/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/Public/plugins/layui/layui.js"></script>
 <!-- footer end -->

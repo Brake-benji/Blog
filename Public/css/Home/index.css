@@ -202,8 +202,9 @@ body{
 }
 
 .activity-list .nav li{
-	width: 25px;
-    height: 2px;
+	width: 8px;
+    height: 8px;
+    border-radius: 50%;
     background-color: #7a7f94;
     cursor: pointer;
     margin: 10px 8px;
@@ -214,8 +215,6 @@ body{
     transition: .2s;
 }
     
-
-
 .mydetail .mydetail_content,.hot-article-list .hot_article_content{
 	margin: 0px 0 20px;
     background: #fff;
@@ -223,11 +222,14 @@ body{
 }
 
 .mydetail li,.hot-article-list li{
+	width: 85%;
 	line-height: 32px;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
     color: #009688;
 }
+
 .hot-article-list li a{
 	font-size: 16px;
 }
@@ -246,7 +248,7 @@ body{
 	margin:5px;
 	border-radius: 3px;
 	cursor: pointer;
-	padding: 0px 2px;
+	padding: 0px 3px;
 }
 .mydetail h3,.activity-list h3,.hot-article-list h3,.tag-list h3{
 	width: auto;
@@ -277,7 +279,7 @@ body{
     clear: both;
     border-top: 1px solid #404553;
     background-color: #393D49;
-    top: 20px;
+    top: 100px;
     position: relative;
 }
 
@@ -303,7 +305,7 @@ body{
 	display: inline-block;
 	float: left;
 	text-align: left;
-	border-right: 1px solid #ccc;
+	border-right: 1px solid #555;
 }
 
 .contact_us{
@@ -313,7 +315,7 @@ body{
 	display: inline-block;
 	float: left;
 	text-align: left;
-	border-right: 1px solid #ccc;
+	border-right: 1px solid #555;
 	margin:0 10px;
 }
 .copyright{

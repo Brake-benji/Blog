@@ -34,7 +34,7 @@ layui.use('form', function(){
 	  form.on('submit(user)', function(data){
 		  
 	    var groupInfo = data.field;
-		var url = "{:U('Admin/Other/editAd')}";
+		var url = "{:U('Backend/Other/editAd')}";
 		$.post(url,groupInfo,function(data){
 			if(data.status == "success"){
 					layer.msg('活动修改成功', {

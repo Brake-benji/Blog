@@ -27,7 +27,7 @@ layui.use('form', function(){
 		  
 	    var userInfo = data.field;
 	    
-		var url = "{:U('Other/addLinks')}";
+		var url = "{:U('Other/addlinks')}";
 		$.post(url,userInfo,function(data){
 			if(data.status == 'error'){
 				  layer.msg(data.msg,{icon: 5});//失败的表情

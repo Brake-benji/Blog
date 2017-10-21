@@ -20,19 +20,19 @@
 	<div class="header-content">
 		<div class="header-main">
 			<ul class="layui-nav" style="padding:0px;border-radius: 0px;width:600px;display: inline-block;"	>
-			<li class="layui-nav-item layui-this"><a href="{:U('Index/index')}">首页</a></li>
+			<li class="layui-nav-item"><a href="{:U('Index/index')}">首页</a></li>
 			  <volist name="cate_list" id="vo">
 				  <volist name="vo['son']" id="ko">
 				  	<li class="layui-nav-item">
 				  	<notempty name="ko['son']">
-				  		<a href="/Blog/index.php/Home/Index/category/cid/{$ko.id}">{$ko.title}</a>
+				  		<a href="/Home/Index/category/cid/{$ko.id}">{$ko.title}</a>
 				  		<dl class="layui-nav-child">
 				  		<volist name="ko['son']" id="yo">
-				  		<dd><a href="/Blog/index.php/Home/Index/category/cid/{$yo.id}">{$yo.title}</a></dd>
+				  		<dd><a href="/Home/Index/category/cid/{$yo.id}">{$yo.title}</a></dd>
 				  		</volist>
 				  		</dl>			 
 				  	<else />
-				  	<a href="/Blog/index.php/Home/Index/category/cid/{$ko.id}">{$ko.title}</a>
+				  	<a href="/Home/Index/category/cid/{$ko.id}">{$ko.title}</a>
 				  	</notempty>
 				  	</li>
 				  </volist>

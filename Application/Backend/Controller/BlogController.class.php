@@ -8,14 +8,7 @@ class BlogController extends CommonController{
 			$this->ajaxError("尚未登录，不能查看文章列表");
 		}
 		$total = M('article')->count();
-		$page = new \Think\Page($total,10);
-		$page->lastSuffix = false;
-        $page->rollPage = 1;
-        $page->setConfig('prev','上一页');
-        $page->setConfig('next','下一页');
-        $page->setConfig('first','首页');
-        $page->setConfig('last','末页');
-        $page->setConfig('theme',' %FIRST% %UP_PAGE% 第%NOW_PAGE%页/共%TOTAL_PAGE%页 %DOWN_PAGE% %END% ');
+		$page = pageInit($total,10);
 		$show = $page->show();
 		$articleList = M()->query("select ss.*,cc.* from (select a.*,b.nick_name as nickname,c.title as catename from article a left join admin_user b on a.uid = b.id left join admin_auth_rule c on a.cid = c.id) as ss left join (select d.aid,d.tid,e.tagname from article_tag_relate d left join tag e on d.tid = e.id) as cc on ss.id = cc.aid group by id order by createtime desc,readcounts desc limit ".$page->firstRow.",".$page->listRows);
 		$this->assign('page',$show);
@@ -70,13 +63,14 @@ class BlogController extends CommonController{
 				$this->ajaxError("文章发布失败");
 			}
 		}else{
-			$menu = D('AdminMenu');
-			$id = array('46','47','48','49','50','52','53');
-			$allCategory = $menu->getMenus($id);  //获取分类
+			$pidDetail = M('admin_auth_rule')->field('id,title,pid')->where('id = 46')->select();
+	        $res = getAllChildrenId(46);
+	        $arr = array_merge($pidDetail,$res);
+	        $allCate = get_column($arr);
+	        unset($allCate[0]);
 			$allTag = M('tag')->field('id,tagname')->order('createtime DESC')->select();
-			$clist = get_column($allCategory);
 			$this->assign('taglist',$allTag);
-			$this->assign('clist',$clist);
+			$this->assign('clist',$allCate);
 			$this->display();
 		}
 	}
@@ -166,12 +160,13 @@ class BlogController extends CommonController{
 			$res = M('article a')->field('a.*,b.user_name,c.title as catename,c.id as cid')->where("a.id =".$id)->join('LEFT JOIN admin_user b ON a.uid = b.id')->join("LEFT JOIN admin_auth_rule c ON a.cid = c.id")->find();
 			$tag = M()->query("select tb2.id,tb2.tagname from (select * from article_tag_relate where aid = ".$res['id'].") as tb1 left join tag tb2 on tb1.tid = tb2.id");
 			if ($res) {
-				$menu = D('AdminMenu');
-				$id = array('46','47','48','49','50','52','53');
-				$allCategory = $menu->getMenus($id);  //获取分类
-				$clist = get_column($allCategory);
+				$pidDetail = M('admin_auth_rule')->field('id,title,pid')->where('id = 46')->select();
+		        $pidArr = getAllChildrenId(46);
+		        $arr = array_merge($pidDetail,$pidArr);
+		        $allCate = get_column($arr);
+		        unset($allCate[0]);
 				$this->assign('tag',$tag);
-				$this->assign('clist',$clist);
+				$this->assign('clist',$allCate);
 				$this->assign('content',htmlspecialchars_decode($res['content']));
 				$this->assign('detail',$res);
 				$this->display();

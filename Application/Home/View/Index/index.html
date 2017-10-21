@@ -14,9 +14,9 @@
 				<ul>
 					<volist name="articlelist" id="v">
 					<li class="article-list">
-						<a href="{:U('Index/detail',array('id' => $v['id']))}"><img src="__ROOT__{$v.artpicture}"></a>
+						<a href="{:U('Home/Index/detail',array('id' => $v['id']))}"><img src="__ROOT__{$v.artpicture}"></a>
 						<br>
-						<a href="{:U('Index/detail',array('id' => $v['id']))}"><p class="article_title">{$v.title}</p></a>
+						<a href="{:U('Home/Index/detail',array('id' => $v['id']))}"><p class="article_title">{$v.title}</p></a>
 						<br>
 						<span class="article_info">
 							<p class="article_content">
@@ -29,7 +29,7 @@
 						<span class="article_described">
 							<i class="layui-icon" style="font-size: 20px; color: #5FB878;">&#xe60a;</i>内容描述：{$v.described} 
 						</span>
-						<a href="{:U('Index/detail',array('id' => $v['id']))}" class="article_detail_btn">查看详情<i class="layui-icon" style="font-size: 20px;position: absolute;line-height: 40px;right: -2px;">&#xe602;</i></a>
+						<a href="{:U('Home/Index/detail',array('id' => $v['id']))}" class="article_detail_btn">查看详情<i class="layui-icon" style="font-size: 20px;position: absolute;line-height: 40px;right: -2px;">&#xe602;</i></a>
 					</li>
 				</volist>
 				</ul>
@@ -51,7 +51,6 @@
 	
 	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
 	<script>
-
 		layui.use(['jquery','element','layer'], function(){
 		    var layer = layui.layer;
 			$ = layui.jquery;
@@ -64,10 +63,24 @@
 							title:'提示',
 							content:'关键词不能为空'
 						});
+						return;
 					}
 					search(keyword);
 				}
 			});
+
+			$('body').on('click','.search-form i',function(){
+				var keyword = $('#keyword').val();
+				if (keyword == '') {
+					layer.open({
+						title:'提示',
+						content:'关键词不能为空'
+					});
+					return;
+				}
+				search(keyword);
+			});
+
 			//活动列表初始化
 			activitylist();
 		});

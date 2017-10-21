@@ -23,7 +23,6 @@ class MenuController extends CommonController
         
         $menu = $this->menu_model->selectAllMenu();
         $menu = get_column($menu);
-
         $this->assign('menu',$menu);
         $this->display();
     }

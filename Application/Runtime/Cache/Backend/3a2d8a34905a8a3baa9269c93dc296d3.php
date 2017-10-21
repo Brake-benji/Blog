@@ -6,8 +6,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>个人博客管理后台登录</title>
-		<link rel="stylesheet" href="/Blog/Public/plugins/layui/css/layui.css" media="all" />
-		<link rel="stylesheet" href="/Blog/Public/css/login.css" />
+		<link rel="stylesheet" href="/Public/plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="/Public/css/login.css" />
 	</head>
 
 	<body class="beg-login-bg">
@@ -46,7 +46,7 @@
 				</form>
 			</div>
 		</div>
-		<script type="text/javascript" src="/Blog/Public/plugins/layui/layui.js"></script>
+		<script type="text/javascript" src="/Public/plugins/layui/layui.js"></script>
 		<script>
 			layui.use(['layer'], function() {
 				var layer = layui.layer,

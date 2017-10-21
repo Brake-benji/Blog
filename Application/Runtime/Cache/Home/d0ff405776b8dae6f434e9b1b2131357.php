@@ -7,7 +7,7 @@
 <?php
  $warning = isset($message) ? $message : $error; $type = isset($message) ? '1' : '2'; ?>
 
-<script type="text/javascript" src="/Blog/Public/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="/Public/plugins/layui/layui.js"></script>
 <script>
 var message = '<span><b><?php echo $warning;?></b>&nbsp;<b id="wait"><?php echo($waitSecond);?></b>秒后将自动跳转...</span>';
 

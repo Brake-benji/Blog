@@ -12,6 +12,7 @@ return array(
     'DB_PORT'               =>  3306, // 端口
     'DB_CHARSET'            =>  'utf8', // 字符集
     'DATA_CACHE_TIME'       =>  600,
+    'URL_MODEL'             =>  2,
 
     'SHOW_PAGE_TRACE'       => false,
     '__STATIC__'            => 'http://localhost:88/Blog',
